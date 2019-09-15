@@ -7,7 +7,7 @@
   <body>
     <header>
       <div>
-        <p>ТЕХНОМАРТ</p>
+        <img src="img/logo-technomart.png" width="100" height="50" alt="Логотип магазина «Техномарт»">
       </div>
       <form>
         <a href="#">Поиск</a>
@@ -218,8 +218,27 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
           </p>
-          <img src="img/adress.png" alt="Адрес магазина">
+          <div>
+            <img src="img/adress.png" alt="Офис компании по адресу ул.Б.Конюшенная д. 19/8">
+            <button type="button">Закрыть</button>
+          </div>
           <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+          <form action="http://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="search-name">Ваше имя:</label>
+              <input id="search-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="search-email">Ваш e-mail:</label>
+              <input id="search-email" type="text" name="email" value="" placeholder="email@example.com">
+            </p>
+            <p>
+               <label for="search-text">Текст письма:</label>
+               <textarea id="search-text" name="comment" cols="#" rows="#" placeholder="В свободной форме"></textarea>     
+            </p>
+            <button type="button">Закрыть</button>
+            <button type="submit">Отправить</button>  
+          </form>
         </section>
     </main>
 
