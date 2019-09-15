@@ -9,8 +9,10 @@
       <div>
         <img src="img/logo-technomart.png" width="100" height="50" alt="Логотип магазина «Техномарт»">
       </div>
-      <form>
-        <a href="#">Поиск</a>
+      <form action="http://echo.htmlacademy.ru" method="post">
+        <label for="search">Поиск:</label>
+        <input id="search" type="text" name="search" value="" placeholder="Поиск">
+        <button type="button">Закрыть</button>
       </form>
       <div>
         <a href="#">Закладки</a>
@@ -206,9 +208,9 @@
           Техномарт работает со многими транспортными компаниями:
           </p>
           <ul>
-              <li><a href="#">Деловые линии</a></li>
-              <li><a href="#">Автотрейдинг</a></li>
-              <li><a href="#">ЖелДорЭкспедиция</a></li>
+            <li><a href="#">Деловые линии</a></li>
+            <li><a href="#">Автотрейдинг</a></li>
+            <li><a href="#">ЖелДорЭкспедиция</a></li>
           </ul>
           <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
         </section>
@@ -220,10 +222,11 @@
           </p>
           <div>
             <img src="img/adress.png" alt="Офис компании по адресу ул.Б.Конюшенная д. 19/8">
-            <button type="button">Закрыть</button>
           </div>
           <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
           <form action="http://echo.htmlacademy.ru" method="post">
+            <img src="img/adress.png">
+            <button type="button">Закрыть</button>
             <p>
               <label for="search-name">Ваше имя:</label>
               <input id="search-name" type="text" name="name" value="" placeholder="Имя Фамилия">
