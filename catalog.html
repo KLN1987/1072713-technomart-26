@@ -71,39 +71,38 @@
           </nav>
         </section>
         <section>
-          <div>
-            <label>Цена:</label>
-          </div>
-        <div class="range-filter">
-          <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+          <form>
+            <fieldset>
+              <legend>Цена:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                  <div class="toggle min-toggle"></div>
+                  <div class="toggle max-toggle"></div>
+                </div>
+                <div class="price-controls">
+                  <input class="min-price" type="text" value="0">
+                  <input class="max-price" type="text" value="30000">
+                </div> 
               </div>
-            <div class="toggle min-toggle"></div>
-            <div class="toggle max-toggle"></div>
-          </div>
-          <div class="price-controls">
-            <input class="min-price" type="text" value="0">
-            <input class="max-price" type="text" value="30000">
-          </div> 
-        </div>  
-        </section>
-        <section> 
-          <div>
-            <p>ПРОИЗВОДИТЕЛИ:</p>
+          </fieldset> 
+            <fieldset>
+              <legend>ПРОИЗВОДИТЕЛИ:</legend>
                 <label><input type="checkbox" name="1" value="BOSH" checked>BOSH</label>
                 <label><input type="checkbox" name="2" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
                 <label><input type="checkbox" name="3" value="MAKITA" checked>MAKITA</label> 
                 <label><input type="checkbox" name="4" value="DEWALT">DEWALT</label>  
                 <label><input type="checkbox" name="5" value="HITACHI" checked>HITACHI</label> 
-          </div>
-          <div>
-            <p>ПИТАНИЕ:</p>
-                <label><input type="radio" name="power-type" value="АККУМУЛЯТОРНЫЕ" checked>АККУМУЛЯТОРНЫЕ</label>
-                <label><input type="radio" name="power-type" value="СЕТЕВЫЕ">СЕТЕВЫЕ</label>  
-          </div>
-          <button type="button">ПОКАЗАТЬ</button>
-        </section>
+            </fieldset>
+          <fieldset>
+            <legend>ПИТАНИЕ:</legend>
+              <label><input type="radio" name="power-type" value="АККУМУЛЯТОРНЫЕ" checked>АККУМУЛЯТОРНЫЕ</label>
+              <label><input type="radio" name="power-type" value="СЕТЕВЫЕ">СЕТЕВЫЕ</label>  
+          </fieldset>
+          <button type="button" >ПОКАЗАТЬ</button>
+         </form>
         <section>
             <ul>
               <li>
@@ -151,7 +150,7 @@
               <p>Товар добавлен в корзину</p>
               <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
               <a href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
-            </form>
+          </form>
         </section>
         <section>
           <nav>
