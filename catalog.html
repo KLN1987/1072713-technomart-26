@@ -72,13 +72,21 @@
         </section>
         <section>
           <div>
-          <label>Цена:</label>
-          <input type="range" name="price" id="price" min="0" max="30000" step="#" value="#">
+            <label>Цена:</label>
           </div>
-          <div>
-            <output name="cost">0</output>
-            <output name="cost">3000</output>
-          </div>  
+        <div class="range-filter">
+          <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
+          <div class="price-controls">
+            <input class="min-price" type="text" value="0">
+            <input class="max-price" type="text" value="30000">
+          </div> 
+        </div>  
         </section>
         <section> 
           <div>
