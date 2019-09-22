@@ -7,6 +7,7 @@ body {
   line-height: normal;
   font-weight: 400;
 }
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -61,3 +62,8 @@ nav a:hover {
   background-color: #ffffff;
 }
 
+.write-us,
+.big-map,
+.visually-hidden {
+  display: none;
+}
