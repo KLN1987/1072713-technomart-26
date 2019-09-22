@@ -11,14 +11,53 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
-.header-hat {
-  background-color: #293449;
+
+h2 {
+  font-size: 30px;
+  color: #000000;
 }
 
-.header-hat a {
-  color: #ffffff;
+.header-hat {
+  background-color: #293449;
 }
 
 .header-hat a:hover {
   color: #979797;
 }
+
+.header-center,
+.perforators  {
+  background-color: #f2f6f8;
+}
+
+nav {
+  background-color: #32425C;
+}
+
+nav a:hover {
+  color: #D8D8D8;
+}
+
+.about-company,
+.company-adress {
+  background-color: #ffffff;
+  color: #000000;
+
+}
+
+.footer-first {
+  background-color: #32425C;
+  font-size: 18px;
+}
+
+.footer-second {
+  background-color: #293449;
+  font-size: 16px;
+}
+
+.product-choice {
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
