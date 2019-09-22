@@ -31,12 +31,16 @@
       </div>
     </div>
     <div class="header-center">
-      <p>
-        Интернет-магазин<br>
-        строительных материалов<br>
-        и интсрументов для ремонта<br>
-      </p>
-      <a href="tel:+78125550555">+7(812)555-05-55</a>
+      <div class="who-we">
+        <p>
+          Интернет-магазин<br>
+          строительных материалов<br>
+          и интсрументов для ремонта<br>
+        </p>
+      </div>
+      <div class="phone">
+        <a href="tel:+78125550555">+7(812)555-05-55</a>
+      </div>
       <address>
         г. Санкт-Петербург, ул.Б.Конюшенная д. 19/8
       </address>
@@ -84,7 +88,7 @@
       </nav>
     </section>
     <section>
-      <form class="product-choice">
+      <form>
         <fieldset>
           <legend>Цена:</legend>
           <div class="range-filter">
@@ -117,53 +121,57 @@
         <button type="button">ПОКАЗАТЬ</button>
       </form>
       <section>
-        <ul>
-          <li>
-            <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
-            </div>
-            <div>
-              <img src="img/Bosh BFG3000.png">
-              <p>Перфоратор BOSH BFG 3000</p>
-              <p>22500 P.</p>
-              <p>15500 P.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
-            </div>
-            <div>
-              <img src="img/Bosh BFG6000.png">
-              <p>Перфоратор BOSH BFG 6000</p>
-              <p>30500 P.</p>
-              <p>25500 P.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="img/new flag.png">
-            </div>
-            <div>
-              <a href="#">КУПИТЬ</a>
-              <a href="#">В ЗАКЛАДКИ</a>
-            </div>
-            <div>
-              <img src="img/Bosh BFG2000.png">
-              <p>Перфоратор BOSH BFG 2000</p>
-              <p>12500 P.</p>
-            </div>
-          </li>
-        </ul>
-        <form action="http://echo.htmlacademy.ru" method="post">
-          <button type="button" aria-label="Закрыть форму покупки товара">х</button>
-          <img src="img/icon-form-mark.svg">
-          <p>Товар добавлен в корзину</p>
-          <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
-          <a href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
-        </form>
+        <div class="product-choice">
+          <ul>
+            <li>
+              <div>
+                <a href="#">КУПИТЬ</a>
+                <a href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <div>
+                <img src="img/Bosh BFG3000.png">
+                <p>Перфоратор BOSH BFG 3000</p>
+                <p>22500 P.</p>
+                <p>15500 P.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="#">КУПИТЬ</a>
+                <a href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <div>
+                <img src="img/Bosh BFG6000.png">
+                <p>Перфоратор BOSH BFG 6000</p>
+                <p>30500 P.</p>
+                <p>25500 P.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/new flag.png">
+              </div>
+              <div>
+                <a href="#">КУПИТЬ</a>
+                <a href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <div>
+                <img src="img/Bosh BFG2000.png">
+                <p>Перфоратор BOSH BFG 2000</p>
+                <p>12500 P.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="place-order">
+          <form action="http://echo.htmlacademy.ru" method="post">
+            <button type="button" aria-label="Закрыть форму покупки товара">х</button>
+            <img src="img/icon-form-mark.svg">
+            <p>Товар добавлен в корзину</p>
+            <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+            <a href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+          </form>
+        </div>
       </section>
       <section>
         <nav>
@@ -204,12 +212,14 @@
         г. Санкт-Петербург, ул.Б.Конюшенная д. 19/8<br>
         +7(812)555-05-55
       </p>
-      <ul>
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-      </ul>
+      <div class="footer-second-menu">
+        <ul>
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="footer-second">
@@ -229,14 +239,16 @@
           <a href="#" aria-label="Техномарт в Инстаграмме">Инстаграмм</a>
         </li>
       </ul>
-      <p>
-        Обратная связь:<br>
-        <a href="#">mail@htmlacademy.ru</a>
-      </p>
-      <p>
-        Разработано -<br>
-        <a href="#">htmlacademy.ru</a>
-      </p>
+      <div class="developer">
+        <p>
+          Обратная связь:<br>
+          <a href="#">mail@htmlacademy.ru</a>
+        </p>
+        <p>
+          Разработано -<br>
+          <a href="#">htmlacademy.ru</a>
+        </p>
+      </div>
     </div>
   </footer>
 </body>

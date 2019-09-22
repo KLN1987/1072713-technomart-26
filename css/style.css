@@ -3,7 +3,7 @@ body {
   padding: 0;
   
   font-family: "Cuprum", "PT Sans", Arial, sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   line-height: normal;
   font-weight: 400;
 }
@@ -11,6 +11,10 @@ body {
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+ul {
+  list-style: none;
 }
 
 h2 {
@@ -39,10 +43,39 @@ nav a:hover {
   color: #D8D8D8;
 }
 
+.who-we {
+  font-style: italic;
+  color: #ee3643;
+}
+
+.phone a {
+  font-size: 21px;
+  color: #ee3643;
+}
+
 .about-company,
 .company-adress {
   background-color: #ffffff;
   color: #000000;
+
+}
+
+.product-choice {
+  font-weight: bold;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+legend {
+  font-weight: bold;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+footer{
+  color: #ffffff;
 
 }
 
@@ -53,16 +86,15 @@ nav a:hover {
 
 .footer-second {
   background-color: #293449;
-  font-size: 16px;
 }
 
-.product-choice {
-  font-family: "PT Sans", Arial, sans-serif;
-  color: #000000;
-  background-color: #ffffff;
+.footer-second-menu a,
+.developer a {
+  color: #ffd180;
 }
 
 .write-us,
+.place-order,
 .big-map,
 .visually-hidden {
   display: none;
