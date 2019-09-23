@@ -66,41 +66,50 @@
   <main>
     <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
     <section>
-      <ul>
-        <li>
-          <img src="img/new flag.png">
-          <p>Материалы</p>
-          <a href="#">НА ЛЮБОЙ ВКУС</a>
-        </li>
-        <li>
-          <p>Инструменты</p>
-          <a href="#">НА ВСЕ СЛУЧАИ</a>
-        </li>
-        <li>
-          <p>Техника</p>
-          <a href="#">ДЛЯ СТРОЙКИ</a>
-        </li>
-        <li>
-          <p>Скидка 50%</p>
-          <a href="#">НА 350 ТОВАРОВ</a>
-        </li>
-        <li>
-          <p>Доставка</p>
-          <a href="#">БЕСПЛАТНО</a>
-        </li>
-      </ul>
-      <div>
-        <img src="img/index_big.png">
+      <div class="category-choice">
+        <ul>
+          <li class="material">
+            <img src="img/new flag.png">
+            <p>Материалы</p>
+            <a href="#">НА ЛЮБОЙ ВКУС</a>
+            <img src="img/bucket.svg">
+          </li>
+          <li class="tool">
+            <p>Инструменты</p>
+            <a href="#">НА ВСЕ СЛУЧАИ</a>
+            <img src="img/drill.svg">
+          </li>
+          <li class="technique">
+            <p>Техника</p>
+            <a href="#">ДЛЯ СТРОЙКИ</a>
+            <img src="img/tractor.svg">
+          </li>
+          <li class="discount">
+            <p>Скидка 50%</p>
+            <a href="#">НА 350 ТОВАРОВ</a>
+            <img src="img/basket.svg">
+          </li>
+          <li class="delivery">
+            <p>Доставка</p>
+            <a href="#">БЕСПЛАТНО</a>
+            <img src="img/delivery.svg">
+          </li>
+        </ul>
+      </div>
+      <div class="main-drill-img">
+        <img src="img/main-drill.png">
         <p>ДРЕЛИ</p>
-        <p>Соседям на радость!</p>
+        <span>Соседям на радость!</span>
         <button type="button">Назад</button>
         <button type="button">Вперед</button>
         <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
       </div>
     </section>
     <section>
-      <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
-      <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+      <div class="popular-product">
+        <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
+        <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+      </div>
       <div class="product-choice">
         <ul>
           <li>
@@ -168,8 +177,10 @@
       </div>
     </section>
     <section>
-      <h2>ПОУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
-      <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+      <div class="popular-manufacture">
+        <h2>ПОУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
+        <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+      </div>
       <div>
         <ul>
           <li>
@@ -199,19 +210,19 @@
         </ul>
       </div>
     </section>
-    <section>
+    <section class="service">
       <h2>СЕРВИСЫ</h2>
       <p>
         Хорший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
-      <div>
+      <div class="delivery-bottom">
         <a href="#">Доставка</a>
       </div>
-      <div>
+      <div class="guarantee-bottom">
         <a href="#">Гарантия</a>
       </div>
-      <div>
+      <div class="credit-bottom">
         <a href="#">Кредит</a>
       </div>
       <h3>ДОСТАВКА</h3>
@@ -221,7 +232,7 @@
         Ведь мы неплохо зарабатываем,<br>
         поднимая его на ваш этаж!<br>
       </p>
-      <img src="#">
+      <img src="img/car.svg">
     </section>
     <section class="about-company">
       <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
@@ -279,7 +290,7 @@
 
   <footer>
     <div class="footer-first">
-      <div>
+      <div class="logo-technomart">
         <img src="img/logo-technomart.png" width="100" height="50" alt="Логотип магазина «Техномарт»">
       </div>
       <ul>

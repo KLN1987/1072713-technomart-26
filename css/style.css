@@ -53,11 +53,14 @@ body h2 {
   color: #979797;
 }
 
-.header-center {
+.header-center,
+.service,
+.about-perforator,
+{
   background-color: #f2f6f8;
 }
 
-.header-adress {
+.header-address {
   font-size: 14px;
   color: #32425c;
 }
@@ -122,10 +125,103 @@ body h2 {
   color: #000000;
 }
 
+.category-choice p {
+  color: #ffffff;
+  font-style: bold;
+  font-size: 24px;
+}
+
+.material {
+  background-color: #ffbf47;
+}
+
+.tool {
+  background-color: #3bbce3;
+}
+
+.technique {
+  background-color: #dc91d8;
+}
+
+.discount {
+  background-color: #8ed78f;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+ 
+.category-choice a {
+  font-size: 14px;
+  opacity: 0.1;
+  background-color: #000000; 
+}
+
+.main-drill-img p {
+  color: #ffffff;
+  font-style: bold;
+  font-size: 36px;
+}
+
+.main-drill-img span {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.main-drill-img a {
+ background-color: #ee3643;
+}
+
+.popular-product,
+.popular-manufacture {
+  background-color: #f9f5f0;
+}
+
+.popular-product h2,
+.popular-manufacture h2 {
+  font-size: 30px;
+  color: #32425c;
+}
+ 
+.popular-product a,
+.popular-manufacture a {
+  font-size: 14px;
+  background-color: #ee3643;
+}
+
 .perforators {
   font-size: 30px;
   color: #32425c;
   background-color: #f2f6f8;
+}
+
+.filters h3 {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  background-color: #f7f3ec;
+}
+
+.sort {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  background-color: #f7f3ec;
+}
+
+.filters-price {
+  color: #ee3643;
+}
+
+.filters-type a,
+.filters-functional a {
+  color: #000000;
+  opacity: 0.3;
+  border-bottom: 1px solid #ee3643;
+}
+
+.range-filter,
+.min-price,
+.max-price {
+  background-color: #f7f3ec;
 }
 
 .sale-price {
@@ -147,6 +243,40 @@ body h2 {
   background-color: #ffffff;
 }
 
+.filters label {
+  font-size: 15px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.filters button {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.service p,
+.about-perforator p {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.service h3 {
+  font-size: 36px;
+  color: #32425c;
+}
+
+.delivery-bottom a {
+  font-size: 21px;
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.guarantee-bottom a,
+.credit-bottom a{
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
 .footer-first {
   background-color: #32425C;
   font-size: 18px;
@@ -164,6 +294,10 @@ body h2 {
 
 .footer-second {
   background-color: #293449;
+}
+
+.footer-second p {
+  color: #ffffff;
 }
 
 .footer-second-menu a,
