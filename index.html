@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
@@ -12,38 +13,44 @@
 
 <body>
   <header>
-    <div class="logo">
+    <div class="logo-technomart">
       <img src="img/logo-technomart.png" width="100" height="50" alt="Логотип магазина «Техномарт»">
     </div>
-    <form action="http://echo.htmlacademy.ru" method="post">
-      <label for="search">Поиск:</label>
-      <input id="search" type="text" name="search" value="" placeholder="Поиск">
-    </form>
     <div class="header-hat">
+      <form action="http://echo.htmlacademy.ru" method="post">
+        <label for="search">Поиск:</label>
+        <input id="search" type="text" name="search" value="" placeholder="Поиск">
+      </form>
       <div>
         <a href="#">Закладки</a>
       </div>
       <div>
         <a href="#">Корзина</a>
       </div>
-      <div>
+      <div class="header-order">
         <a href="#">Оформить заказ</a>
       </div>
     </div>
     <div class="header-center">
-      <p>
-        Интернет-магазин<br>
-        строительных материалов<br>
-        и интсрументов для ремонта<br>
-      </p>
-      <a href="tel:+78125550555">+7(812)555-05-55</a>
-      <address>
+      <div class="who-we">
+        <p>
+          Интернет-магазин<br>
+          строительных материалов<br>
+          и интсрументов для ремонта<br>
+        </p>
+      </div>
+      <div class="phone">
+        <a href="tel:+78125550555">+7(812)555-05-55</a>
+      </div>
+      <address class="header-address">
         г. Санкт-Петербург, ул.Б.Конюшенная д. 19/8
       </address>
-      <a href="#">Войти</a>
-      <a href="#">Регистрация</a>
+      <div class="login-account">
+        <a href="#">Войти</a>
+        <a href="#">Регистрация</a>
+      </div>
     </div>
-    <nav>
+    <nav class="header-navigation">
       <ul>
         <li><a href="#">Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -94,7 +101,7 @@
     <section>
       <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
       <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
-      <div>
+      <div class="product-choice">
         <ul>
           <li>
             <div>
@@ -105,7 +112,7 @@
               <img src="img/Bosh BFG9000.png">
               <p>Перфоратор BOSH BFG 9000</p>
               <p>32500 P.</p>
-              <p>25500 P.</p>
+              <p class="sale-price">25500 P.</p>
             </div>
           </li>
           <li>
@@ -117,7 +124,7 @@
               <img src="img/Bosh BFG3000.png">
               <p>Перфоратор BOSH BFG 3000</p>
               <p>22500 P.</p>
-              <p>15500 P.</p>
+              <p class="sale-price">15500 P.</p>
             </div>
           </li>
           <li>
@@ -129,7 +136,7 @@
               <img src="img/Bosh BFG6000.png">
               <p>Перфоратор BOSH BFG 6000</p>
               <p>30500 P.</p>
-              <p>25500 P.</p>
+              <p class="sale-price">25500 P.</p>
             </div>
           </li>
           <li>
@@ -145,16 +152,18 @@
             <div>
               <img src="img/Bosh BFG2000.png">
               <p>Перфоратор BOSH BFG 2000</p>
-              <p>12500 P.</p>
+              <p class="sale-price">12500 P.</p>
             </div>
           </li>
-          <form action="http://echo.htmlacademy.ru" method="post">
-            <button type="button" aria-label="Закрыть форму покупки товара">х</button>
-            <img src="img/icon-form-mark.svg">
-            <p>Товар добавлен в корзину</p>
-            <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
-            <a href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
-          </form>
+          <div class="place-order">
+            <form action="http://echo.htmlacademy.ru" method="post">
+              <button type="button" aria-label="Закрыть форму покупки товара">х</button>
+              <img src="img/icon-form-mark.svg">
+              <p>Товар добавлен в корзину</p>
+              <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+              <a href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+            </form>
+          </div>
         </ul>
       </div>
     </section>
@@ -229,7 +238,9 @@
         <li><a href="#">Автотрейдинг</a></li>
         <li><a href="#">ЖелДорЭкспедиция</a></li>
       </ul>
-      <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+      <div class="detailed-company">
+        <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+      </div>
     </section>
     <section class="company-adress">
       <h2>КОНТАКТЫ</h2>
@@ -237,7 +248,7 @@
         Вы можете забрать товар сами,<br>
         заехав в наш офис:
       </p>
-      <div>
+      <div class="map">
         <img src="img/adress.png" alt="Офис компании по адресу ул.Б.Конюшенная д. 19/8">
       </div>
       <div class="big-map">
@@ -282,12 +293,14 @@
         г. Санкт-Петербург, ул.Б.Конюшенная д. 19/8<br>
         +7(812)555-05-55
       </p>
-      <ul>
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-      </ul>
+      <div class="footer-second-menu">
+        <ul>
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="footer-second">
@@ -307,14 +320,16 @@
           <a href="#" aria-label="Техномарт в Инстаграмме">Инстаграмм</a>
         </li>
       </ul>
-      <p>
-        Обратная связь:<br>
-        <a href="#">mail@htmlacademy.ru</a>
-      </p>
-      <p>
-        Разработано -<br>
-        <a href="#">htmlacademy.ru</a>
-      </p>
+      <div class="developer">
+        <p>
+          Обратная связь:<br>
+          <a href="#">mail@htmlacademy.ru</a>
+        </p>
+        <p>
+          Разработано -<br>
+          <a href="#">htmlacademy.ru</a>
+        </p>
+      </div>
     </div>
   </footer>
 </body>

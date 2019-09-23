@@ -13,20 +13,20 @@
 
 <body>
   <header>
-    <div>
+    <div class="logo-technomart">
       <img src="img/logo-technomart.png" width="100" height="50" alt="Логотип магазина «Техномарт»">
     </div>
-    <form>
-      <a href="#">Поиск</a>
-    </form>
     <div class="header-hat">
+      <form>
+        <a href="#">Поиск</a>
+      </form>
       <div>
         <a href="#">Закладки</a>
       </div>
-      <div>
+      <div class="header-basket">
         <a href="#">Корзина</a>
       </div>
-      <div>
+      <div class="header-order">
         <a href="#">Оформить заказ</a>
       </div>
     </div>
@@ -41,16 +41,16 @@
       <div class="phone">
         <a href="tel:+78125550555">+7(812)555-05-55</a>
       </div>
-      <address>
+      <address class="header-address">
         г. Санкт-Петербург, ул.Б.Конюшенная д. 19/8
       </address>
-      <div>
+      <div class="personal-account">
         <p>Равшан Джамшутович</p>
         <a href="#">Мои заказы</a>
         <a href="#">Личный кабинет</a>
       </div>
     </div>
-    <nav>
+    <nav class="header-navigation">
       <ul>
         <li><a href="#">Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -65,7 +65,7 @@
 
   <main>
     <h1 class="visually-hidden">КАТАЛОГ</h1>
-    <ul>
+    <ul class="main-menu">
       <li><a href="index.html">Главная</a></li>
       <li><a href="">Каталог</a></li>
       <li><a href="">Инструмент</a></li>
@@ -74,126 +74,128 @@
     <div class="perforators">
       <h2>ПЕРФОРАТОРЫ</h2>
     </div>
-    <h3>ФИЛЬТР</h3>
-    <section>
-      <p>СОРТИРОВКА</p>
-      <nav>
-        <ul>
-          <li><a href="">ПО ЦЕНЕ</a></li>
-          <li><a href="">ПО ТИПУ</a></li>
-          <li><a href="">ПО ФУНКЦИОНАЛУ</a></li>
-        </ul>
-        <button type="button">Вверх</button>
-        <button type="button">Вниз</button>
-      </nav>
-    </section>
-    <section>
-      <form>
-        <fieldset>
-          <legend>Цена:</legend>
-          <div class="range-filter">
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
-            </div>
-            <div class="price-controls">
-              <input class="min-price" type="text" value="0">
-              <input class="max-price" type="text" value="30000">
-            </div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>ПРОИЗВОДИТЕЛИ:</legend>
-          <label><input type="checkbox" name="1" value="BOSH" checked>BOSH</label>
-          <label><input type="checkbox" name="2" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
-          <label><input type="checkbox" name="3" value="MAKITA" checked>MAKITA</label>
-          <label><input type="checkbox" name="4" value="DEWALT">DEWALT</label>
-          <label><input type="checkbox" name="5" value="HITACHI" checked>HITACHI</label>
-        </fieldset>
-        <fieldset>
-          <legend>ПИТАНИЕ:</legend>
-          <label><input type="radio" name="power-type" value="АККУМУЛЯТОРНЫЕ" checked>АККУМУЛЯТОРНЫЕ</label>
-          <label><input type="radio" name="power-type" value="СЕТЕВЫЕ">СЕТЕВЫЕ</label>
-        </fieldset>
-        <button type="button">ПОКАЗАТЬ</button>
-      </form>
+    <div class="filters">
+      <h3>ФИЛЬТР</h3>
       <section>
-        <div class="product-choice">
-          <ul>
-            <li>
-              <div>
-                <a href="#">КУПИТЬ</a>
-                <a href="#">В ЗАКЛАДКИ</a>
-              </div>
-              <div>
-                <img src="img/Bosh BFG3000.png">
-                <p>Перфоратор BOSH BFG 3000</p>
-                <p>22500 P.</p>
-                <p>15500 P.</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a href="#">КУПИТЬ</a>
-                <a href="#">В ЗАКЛАДКИ</a>
-              </div>
-              <div>
-                <img src="img/Bosh BFG6000.png">
-                <p>Перфоратор BOSH BFG 6000</p>
-                <p>30500 P.</p>
-                <p>25500 P.</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="img/new flag.png">
-              </div>
-              <div>
-                <a href="#">КУПИТЬ</a>
-                <a href="#">В ЗАКЛАДКИ</a>
-              </div>
-              <div>
-                <img src="img/Bosh BFG2000.png">
-                <p>Перфоратор BOSH BFG 2000</p>
-                <p>12500 P.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="place-order">
-          <form action="http://echo.htmlacademy.ru" method="post">
-            <button type="button" aria-label="Закрыть форму покупки товара">х</button>
-            <img src="img/icon-form-mark.svg">
-            <p>Товар добавлен в корзину</p>
-            <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
-            <a href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
-          </form>
-        </div>
-      </section>
-      <section>
+        <p>СОРТИРОВКА</p>
         <nav>
           <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">СЛЕДУЮЩАЯ</a></li>
+            <li><a href="">ПО ЦЕНЕ</a></li>
+            <li><a href="">ПО ТИПУ</a></li>
+            <li><a href="">ПО ФУНКЦИОНАЛУ</a></li>
           </ul>
+          <button type="button">Вверх</button>
+          <button type="button">Вниз</button>
         </nav>
       </section>
       <section>
-        <!--Общая информация о продукте-->
-        <h2>Пара слов о перфораторах</h2>
-        <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
-          кирпиче, бетоне и камне.</p>
-        <p>Существуют электромеханические и пневматические перфораторы.
-          Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-          В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и
-          ударная дрель.
-        </p>
-      </section>
+        <form>
+          <fieldset>
+            <legend>Цена:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+              <div class="price-controls">
+                <input class="min-price" type="text" value="0">
+                <input class="max-price" type="text" value="30000">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>ПРОИЗВОДИТЕЛИ:</legend>
+            <label><input type="checkbox" name="1" value="BOSH" checked>BOSH</label>
+            <label><input type="checkbox" name="2" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+            <label><input type="checkbox" name="3" value="MAKITA" checked>MAKITA</label>
+            <label><input type="checkbox" name="4" value="DEWALT">DEWALT</label>
+            <label><input type="checkbox" name="5" value="HITACHI" checked>HITACHI</label>
+          </fieldset>
+          <fieldset>
+            <legend>ПИТАНИЕ:</legend>
+            <label><input type="radio" name="power-type" value="АККУМУЛЯТОРНЫЕ" checked>АККУМУЛЯТОРНЫЕ</label>
+            <label><input type="radio" name="power-type" value="СЕТЕВЫЕ">СЕТЕВЫЕ</label>
+          </fieldset>
+          <button type="button">ПОКАЗАТЬ</button>
+        </form>
+        <section>
+    </div>
+    <div class="product-choice">
+      <ul>
+        <li>
+          <div>
+            <a href="#">КУПИТЬ</a>
+            <a href="#">В ЗАКЛАДКИ</a>
+          </div>
+          <div>
+            <img src="img/Bosh BFG3000.png">
+            <p>Перфоратор BOSH BFG 3000</p>
+            <p>22500 P.</p>
+            <p class="sale-price">15500 P.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <a href="#">КУПИТЬ</a>
+            <a href="#">В ЗАКЛАДКИ</a>
+          </div>
+          <div>
+            <img src="img/Bosh BFG6000.png">
+            <p>Перфоратор BOSH BFG 6000</p>
+            <p>30500 P.</p>
+            <p class="sale-price">25500 P.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="img/new flag.png">
+          </div>
+          <div>
+            <a href="#">КУПИТЬ</a>
+            <a href="#">В ЗАКЛАДКИ</a>
+          </div>
+          <div>
+            <img src="img/Bosh BFG2000.png">
+            <p>Перфоратор BOSH BFG 2000</p>
+            <p class="sale-price">12500 P.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="place-order">
+      <form action="http://echo.htmlacademy.ru" method="post">
+        <button type="button" aria-label="Закрыть форму покупки товара">х</button>
+        <img src="img/icon-form-mark.svg">
+        <p>Товар добавлен в корзину</p>
+        <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+        <a href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+      </form>
+    </div>
+    </section>
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">СЛЕДУЮЩАЯ</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section>
+      <!--Общая информация о продукте-->
+      <h2>Пара слов о перфораторах</h2>
+      <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+        кирпиче, бетоне и камне.</p>
+      <p>Существуют электромеханические и пневматические перфораторы.
+        Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+        В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и
+        ударная дрель.
+      </p>
+    </section>
   </main>
 
   <footer>

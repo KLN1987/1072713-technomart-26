@@ -7,38 +7,85 @@ body {
   font-weight: 400;
 }
 
+body ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
 }
 
-ul {
-  list-style: none;
-}
-
-h2 {
+body h2 {
   font-size: 30px;
   color: #000000;
+}
+
+.logo-technomart {
+  background-color: #ee3643;
+}
+
+.header-basket {
+  font-size: 17px;
+  background-color: #ee3643;
+}
+
+.header-order {
+  font-size: 17px;
+  background-color: #63a63e;
 }
 
 .header-hat {
   background-color: #293449;
 }
 
+.header-hat label {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.header-hat a, 
+.header-navigation a {
+  font-size: 17px;
+}
+
 .header-hat a:hover {
   color: #979797;
 }
 
-.header-center,
-.perforators  {
+.header-center {
   background-color: #f2f6f8;
 }
 
-nav {
+.header-adress {
+  font-size: 14px;
+  color: #32425c;
+}
+
+.personal-account a {
+  color: #32425c;
+}
+
+.personal-account p {
+  font-size: 21px;
+  background-color: #ffffff;
+}
+
+.login-account {
+  color: #000000;
+}
+
+.login-account a {
+  font-size: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.header-navigation {
   background-color: #32425C;
 }
 
-nav a:hover {
+.header-navigation a:hover {
   color: #D8D8D8;
 }
 
@@ -56,7 +103,34 @@ nav a:hover {
 .company-adress {
   background-color: #ffffff;
   color: #000000;
+}
 
+.detailed-company a{
+  font-size: 14px;
+  background-color: #ee3643;
+}
+
+.company-adress a {
+  font-size: 14px;
+  background-color: #ee3643;
+}
+
+.main-menu,
+.main-menu a {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+}
+
+.perforators {
+  font-size: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.sale-price {
+  font-size: 17px;
+  background-color: #ee3643;
 }
 
 .product-choice {
@@ -66,21 +140,26 @@ nav a:hover {
   background-color: #ffffff;
 }
 
-legend {
+.filters legend {
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   background-color: #ffffff;
 }
 
-footer{
-  color: #ffffff;
-
-}
-
 .footer-first {
   background-color: #32425C;
   font-size: 18px;
+}
+
+.footer-first a {
+  font-size: 18px;
+  color: #f1f5f7;
+}
+
+.footer-first p {
+  font-size: 18px;
+  color: #f3f7f9;
 }
 
 .footer-second {
