@@ -7,6 +7,11 @@ body {
   font-weight: 400;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body ul {
   list-style: none;
 }
@@ -22,38 +27,107 @@ body h2 {
   font-weight: 400;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  margin-bottom: 59px;
+}
+
+.header-hat {
+  width: 100%;
+  min-height: 42px;
+  background-color: #293449;
+  margin-bottom: 46px;
+  text-align: center;
+}
+
 .logo-technomart {
-  width: 220px;
-  height: 47px;
+  position: absolute;
+  top: 0px;
+  left: 130px;
+  width: 200px;
+  padding: 9px 10px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
   background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+  overflow: hidden;
+}
+
+.logo-technomart:hover {
+  background-color: #ca2c37;
+}
+
+.logo-technomart:active {
+  background-color: #ba2732;
+}
+
+.header-hat .container {
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.main-header-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 450px;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.header-search {
+  padding-left: 269px;
+  font-size: 17px;
+  color: #fff;
+}
+
+.header-bookmarks {
+  width: 150px;
+  height: 42px;
+  font-size: 17px;
 }
 
 .header-basket {
-  font-size: 17px;
-  background-color: #ee3643;
+  width: 150px;
+  height: 42px;
+  font-size: 17px; 
 }
 
 .header-order {
+  display: block;
+  text-align: center;
+  width: 150px;
+  height: 42px;
   font-size: 17px;
   background-color: #63a63e;
 }
 
-.header-hat {
-  background-color: #293449;
+.header-bookmarks:active,
+.header-basket:active {
+  opacity: 0.6;
 }
 
-.header-hat label {
-  font-size: 17px;
-  color: #ffffff;
+.header-order:hover {
+  background-color: #5fbb2d;
 }
 
-.header-hat a, 
-.header-navigation a {
-  font-size: 17px;
-}
-
-.header-hat a:hover {
-  color: #979797;
+.header-order:active {
+  opacity: 0.5;
+  background-color: #518534;
 }
 
 .header-center,
@@ -61,6 +135,14 @@ body h2 {
 .about-perforator,
 {
   background-color: #f2f6f8;
+}
+
+.header-center {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 48 px;
 }
 
 .header-address {
