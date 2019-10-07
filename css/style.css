@@ -84,7 +84,6 @@ body h2 {
   align-items: flex-end;
   width: 450px;
   margin: 0;
-  padding: 0;
   
   list-style: none;
 }
@@ -130,24 +129,34 @@ body h2 {
   background-color: #518534;
 }
 
-.header-center,
+.main-header,
 .service,
-.about-perforator,
-{
+.about-perforator {
   background-color: #f2f6f8;
 }
 
-.header-center {
-  display: flex;
+.header-center .container {
+  display:flex;
   justify-content: space-between;
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-top: 48 px;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 51px;
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;  
 }
 
 .header-address {
+  display: flex;  
+  flex-wrap: wrap;
   font-size: 14px;
   color: #32425c;
+  width: 270px;
+  height: 24px;
+  margin-top: 5px;
+  text-align: center; 
 }
 
 .personal-account a {
@@ -166,6 +175,19 @@ body h2 {
 .login-account a {
   font-size: 21px;
   color: #000000;
+}
+
+.login-enter {
+  width: 121px;
+  height: 45px;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+
+.login-registration {
+  width: 150px;
+  height: 45px;
+  text-align: left;
   background-color: #ffffff;
 }
 
@@ -178,13 +200,27 @@ body h2 {
 }
 
 .who-we {
+  width: 226px;
+  height: 60px;
   font-style: italic;
   color: #ee3643;
+  margin-top: 42px;
+}
+
+.phone {
+  width: 270px;
+  height: 45px;
+  border: solid 3px rgb(255, 255, 255);
 }
 
 .phone a {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 21px;
   color: #ee3643;
+  width: 174px;
+  height: 21px;
+  padding: 12px 22px 12px 74px;
 }
 
 .about-company,
