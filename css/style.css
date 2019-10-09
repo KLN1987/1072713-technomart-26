@@ -481,26 +481,16 @@ body h2 {
 }
 
 .slider-inner {
+  position: relative;
   overflow: hidden;
-}
-
-.slider-slides {
-  width: 300%;
-  transition: transform 0.8s ease;
+  width: 620px;
+  margin-top: -50px;
 }
 
 .slider-slides {
   float: left;
-  width: 620px;
-  height: 266px;
-}
-
-.slider-slides .slide-1 {
-  background: url('../img/main-drill.png') no-repeat 0 0;
-}
-
-.slider-slides .slide-2 {
-  background: url('../img/perforators.png') no-repeat 0 0;
+  transition: transform 0.8s ease;
+  position: relative;
 }
 
 .discription-slide p {
@@ -532,30 +522,49 @@ body h2 {
   font-size: 14px;
   line-height: 18px;
   margin-top: 206px;
-  margin-left: 25px; 
+  margin-left: 25px;
+  z-index: 20; 
 }
 
-.arrow {
-   width: 22px;
-   height: 40px;
-   border-color: #000;
-   position: absolute;
-   top: 50%;
-   margin-top: -31px;
+.arrow .next {
+  position: absolute;
+  width: 22px;
+  height: 40px;
+  transform: rotate(180deg);
+  margin-top: 110px;
+  margin-left: 578px;
+  z-index: 20; 
 }
 
-.prev {
-   border-bottom: 6px solid;
-   border-left: 6px solid;
-   transform: rotate(45deg);
-   left: 10px;
+.arrow .prev {
+  position: absolute;
+  width: 22px;
+  height: 40px;
+  margin-top: 110px;
+  margin-left: 25px;
+  z-index: 20; 
 }
-   
-.next {
-   border-bottom: 6px solid;
-   border-left: 6px solid;
-   transform: rotate(-135deg);
-   right: 10px;
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-controls {
+  position: absolute; 
+  margin-top: 220px;
+  margin-left: 425px;
+  text-align: center;
+  z-index: 20;
+}
+
+.slider-controls label {
+  display: inline-block;
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
 .popular-manufacture {
