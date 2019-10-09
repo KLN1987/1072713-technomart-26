@@ -46,25 +46,13 @@ body h2 {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
   width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.main-header {
-  display: flex;
-  flex-direction: column;
-  min-height: 320px;
-  margin-bottom: 59px;
+  margin: 0 auto;  
 }
 
 .header-hat {
   width: 100%;
-  min-height: 42px;
   background-color: #293449;
-  text-align: center;
 }
 
 .logo-technomart {
@@ -91,19 +79,13 @@ body h2 {
   background-color: #ba2732;
 }
 
-.header-hat .container {
-  display:flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
 .main-header-right {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  justify-content: flex-end;
   margin: 0;
-  
   list-style: none;
+  text-align: center;
 }
 
 .header-search {
@@ -161,31 +143,32 @@ body h2 {
 }
 
 .header-center {
+  display: flex;
+  justify-content: space-between;
   background-color: #f1f5f7;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .who-we {
-  float: left;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
-  margin: 42px 42px 52px 182px;
 }
 
 .header-contacts {
-  float: left;
   text-align: left;
-  margin-top: 46px;
 }
 
 .phone {
   position: relative;
-  padding: 12px 22px 12px 74px;
   font-size: 21px;
   line-height: 18px;
   text-align: center;
   border: 3px solid #fff;
+  padding: 12px 22px 12px 74px;
 }
 
 .phone a{
@@ -202,8 +185,7 @@ body h2 {
 }
 
 .address {
-  margin-top: 3px;
-  padding-top: 5px;
+  margin-top: 5px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -227,8 +209,6 @@ body h2 {
 .login-registration {
   display: inline-block;
   padding: 12px 20px;
-  margin-left: 10px;
-  margin-top: 45px;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
@@ -248,9 +228,6 @@ body h2 {
 
 .login-enter {
   display: inline-block;
-  padding: 12px 23px;
-  margin-top: 45px;
-  margin-left: 69px;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
@@ -258,6 +235,7 @@ body h2 {
   vertical-align: middle;
   color: #000000;
   background-color: #fff;
+  padding: 12px 20px;
 }
 
 .login-enter::before {
@@ -278,17 +256,16 @@ body h2 {
   color: #c5c5c5;
 }
 
-.header-navigation {
-  width: 940px;
+.header-navigation ul{
   box-shadow: inset 0 -5px 0 0 #293449;
   background-color: #32425C;
   align-self: center;
   margin-bottom: 60px;
-}
-
-.header-navigation ul {
   display: flex;
   justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 23px;
+  margin-bottom: 119px;
 }
 
 .header-navigation a:hover {
@@ -330,18 +307,6 @@ body h2 {
   font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
-}
-
-.category-choice p {
-  color: #ffffff;
-  font-style: bold;
-  font-size: 24px;
-}
-
-.category-choice {
-  width: 940px;
-  margin: 20px auto;
-  margin-left: 130px;
 }
 
 .category-item {
@@ -475,8 +440,6 @@ body h2 {
 
 .main-slider {
   position: relative;
-  margin-left: 130px;
-  margin-top: -290px;
   width: 620px;
 }
 
@@ -484,7 +447,7 @@ body h2 {
   position: relative;
   overflow: hidden;
   width: 620px;
-  margin-top: -50px;
+  margin-top: -285px;
 }
 
 .slider-slides {
@@ -522,25 +485,6 @@ body h2 {
   font-size: 14px;
   line-height: 18px;
   margin-top: 206px;
-  margin-left: 25px;
-  z-index: 20; 
-}
-
-.arrow .next {
-  position: absolute;
-  width: 22px;
-  height: 40px;
-  transform: rotate(180deg);
-  margin-top: 110px;
-  margin-left: 578px;
-  z-index: 20; 
-}
-
-.arrow .prev {
-  position: absolute;
-  width: 22px;
-  height: 40px;
-  margin-top: 110px;
   margin-left: 25px;
   z-index: 20; 
 }
