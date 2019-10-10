@@ -14,15 +14,13 @@
 <body>
   <header>
     <div class="main-header">
-      <div class="logo-technomart">Техномарт</div>
       <div class="header-hat">
-        <div class="container">
-          <div class="main-header-left">
-            <form class="header-search" action="http://echo.htmlacademy.ru" method="post">
-              <label for="search">Поиск:</label>
-              <input class="visually-hidden" id="search" type="text" name="search" value="" placeholder="Поиск">
-            </form>
-          </div>
+        <div class="container header-flex">
+          <div class="logo-technomart">Техномарт</div>
+          <form class="header-search" action="http://echo.htmlacademy.ru" method="post">
+            <label for="search">Поиск:</label>
+            <input class="visually-hidden" id="search" type="text" name="search" value="" placeholder="Поиск">
+          </form>
           <div class="main-header-right">
             <div class="header-bookmarks">
               <a href="#">Закладки: 0</a>
@@ -59,19 +57,17 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <nav class="header-navigation">
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="container">
+        <ul class="header-navigation">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -101,6 +97,37 @@
             <a class="link-category-choice" href="#">ДЛЯ СТРОЙКИ</a>
           </div>
         </div>
+        <div class="main-slider">
+            <div class="slider-inner">
+              <div class="slider-slides">
+                <div class="open-catalog">
+                  <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                </div>
+                <div class="arrow">
+                  <button class="prev" alt="Назад"></button>
+                  <button class="next" alt="Вперед"></button>
+                </div>
+                <div class="discription-slide slide">
+                  <p>ДРЕЛИ</p>
+                  <span>Соседям на радость!</span>
+                  <img src="img/main-drill.png">
+                </div>
+                <div class="discription-slide slide-2">
+                  <p>ПЕРФОРАТОРЫ</p>
+                  <span>Настоящие мужские игрушки</span>
+                  <img src="img/perforators.png">
+                </div>
+              </div>
+              <div class="switch">
+                <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <div class="slider-controls">
+                  <label for="btn-1"></label>
+                  <label for="btn-2"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
         <div class="category-item discount">
           <div class="name-category">Скидка 50%</div>
           <div class="image-discount"><img width="59" height="72" src="img/basket.svg"></div>
@@ -115,42 +142,45 @@
             <a class="link-category-choice" href="#">БЕСПЛАТНО</a>
           </div>
         </div>
+        <!--
         <div class="main-slider">
-          <div class="open-catalog">
-            <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-          </div>
-          <div class="arrow">
-            <button alt="Назад">
-              < </button> <button alt="Вперед"> >
-            </button>
-          </div>
           <div class="slider-inner">
             <div class="slider-slides">
-              <div class="discription-slide slide-one">
+              <div class="open-catalog">
+                <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+              </div>
+              <div class="arrow">
+                <button class="prev" alt="Назад"></button>
+                <button class="next" alt="Вперед"></button>
+              </div>
+              <div class="discription-slide slide">
                 <p>ДРЕЛИ</p>
                 <span>Соседям на радость!</span>
                 <img src="img/main-drill.png">
               </div>
-              <div class="discription-slide slide-two">
+              <div class="discription-slide slide-2">
                 <p>ПЕРФОРАТОРЫ</p>
                 <span>Настоящие мужские игрушки</span>
                 <img src="img/perforators.png">
               </div>
             </div>
-          </div>
-        </div>
-        <div class="slider">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-          </div>
+            <div class="switch">
+              <input type="radio" id="btn-1" name="toggle" checked>
+              <input type="radio" id="btn-2" name="toggle">
+              <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                </div>
+              </div>
+            </div>
+          </div>-->
     </section>
     <section>
-      <div class="popular-product">
-        <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
-        <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+      <div class="container">
+        <div class="popular-product">
+          <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+          <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+        </div>
       </div>
       <div class="product-choice">
         <ul>
@@ -219,9 +249,11 @@
       </div>
     </section>
     <section>
-      <div class="popular-manufacture">
-        <h2>ПОУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
-        <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+      <div class="container">
+        <div class="popular-manufacture">
+          <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+          <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+        </div>
       </div>
       <div>
         <ul>
