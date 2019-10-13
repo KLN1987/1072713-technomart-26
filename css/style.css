@@ -803,6 +803,12 @@ body h2 {
   padding: 13px auto;
 }
 
+.delivery-company span {
+  width: 25px;
+  height: 2px;
+  background-color: rgb(238, 54, 67);
+}
+
 .company-adress {
   display: flex;
   flex-direction: column;
