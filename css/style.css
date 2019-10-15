@@ -100,10 +100,11 @@ body h2 {
 .main-header-right {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;;
   margin: 0;
   list-style: none;
   text-align: center;
+  width: 450px;
 }
 
 .header-search {
@@ -113,6 +114,15 @@ body h2 {
   padding-left: 269px;
   font-size: 17px;
   color: #fff;
+  width: 270px;
+}
+
+.header-search:hover {
+  background-color: #212a3a;
+}
+
+.header-search:active {
+  background-color: #293449;
 }
 
 .header-bookmarks {
@@ -128,7 +138,27 @@ body h2 {
   padding-bottom: 12px;
   padding-left: 8px;
   padding-right: 8px;
+  font-size: 17px;
+}
+
+.header-bookmarks:hover,
+.header-basket:hover {
+  background-color: #212a3a;
+}
+
+.header-bookmarks:active,
+.header-basket:active {
+  background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.header-basket-catalog {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
   font-size: 17px; 
+  background-color: #ee3643;
 }
 
 .header-order {
@@ -140,17 +170,12 @@ body h2 {
   background-color: #63a63e;
 }
 
-.header-bookmarks:active,
-.header-basket:active {
-  opacity: 0.6;
-}
-
 .header-order:hover {
   background-color: #5fbb2d;
 }
 
 .header-order:active {
-  opacity: 0.5;
+  color: rgb(255, 255, 255, 0.5);
   background-color: #518534;
 }
 
@@ -164,9 +189,10 @@ body h2 {
   display: flex;
   justify-content: space-between;
   background-color: #f1f5f7;
-  margin: 0 auto;
+  margin: 0;
   margin-top: 40px;
   margin-bottom: 40px;
+  margin-left: 52px;
 }
 
 .who-we {
@@ -187,9 +213,10 @@ body h2 {
   text-align: center;
   border: 3px solid #fff;
   padding: 12px 22px 12px 74px;
+  margin-left: 42px;
 }
 
-.phone a{
+.phone a {
   color: #ee3643;
 }
 
@@ -202,13 +229,52 @@ body h2 {
   color: #b7bfc8;
 }
 
-.address {
+address {
+  margin-left: 42px;
   margin-top: 5px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #32425c;
 }
+
+.login-account-catalog .name-user {
+  display: inline-block;
+  color: #000;
+  font-size: 21px;
+  background-color: #fff;
+  padding: 12px 40px 12px 46px;
+  margin-left: 51px;
+}
+
+.login-account-catalog-down {
+  display: flex; 
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 68px;
+  margin-top: 7px;
+}
+
+.login-account-catalog-down a {
+  position: relative;
+  margin-right: 20px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.login-account-catalog-down .my-order::after {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 89px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #32425c;
+}
+
+.login-account-catalog-down 
 
 .personal-account a {
   color: #32425c;
@@ -236,12 +302,12 @@ body h2 {
   background-color: #fff;
 }
 
-.login-registration:hover {
+.login-account:hover a {
   color: #ee3643;
 }
 
-.login-registration:active {
-  opacity: 0.3;
+.login-account:active a {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .login-enter {
@@ -577,22 +643,17 @@ body h2 {
 
 .popular-product {
   margin-top: 53px;
-}
- 
-.popular-product a,
-.popular-manufacture a {
-  font-size: 14px;
-  background-color: #ee3643;
+  margin-bottom: 20px;
 }
 
+ .popular-manufacture{
+   margin-top: 20px;
+ }
+ 
 .popular-product,
 .popular-manufacture {
   display: flex;
   justify-content: space-between;
-}
-
-.popular-product {
-  margin-bottom: 26px;
 }
 
 .popular-manufacture {
@@ -615,6 +676,8 @@ body h2 {
   background-color: #ee3643;
   line-height: 18px;
   margin: 25px 25px 25px auto;
+  font-size: 14px;
+  padding-top: 6px;
 }
 
 .product-choice {
@@ -806,14 +869,21 @@ body h2 {
   margin-bottom: 38px;
 }
 
-.detailed-company a {
-  padding: 13px auto;
+.detailed-company {
+  width: 220px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #ee3643;
+  line-height: 18px;
+  margin-top: 38px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .delivery-company span {
   width: 25px;
   height: 2px;
-  background-color: rgb(238, 54, 67);
+  color: rgb(238, 54, 67);
 }
 
 .company-adress {
@@ -821,6 +891,17 @@ body h2 {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 86px;
+}
+
+.btn-write-us {
+  width: 300px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #ee3643;
+  line-height: 18px;
+  margin-top: 38px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .service {
