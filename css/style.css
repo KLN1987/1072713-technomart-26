@@ -620,6 +620,7 @@ body h2 {
 .product-choice {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
@@ -901,10 +902,18 @@ body h2 {
   left: 471px; 
 }
 
+.center-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
 .breadcrumbs {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  width: 100%;
   padding: 0;
   margin: 0;
   margin-bottom: 28px;
@@ -943,10 +952,244 @@ body h2 {
   margin-bottom: 20px;
 }
 
-.filters-sort{
- display: flex;
- justify-content: space-between;
+.filters-sort {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 20px;
+ }
+
+ .filters {
+  width: 220px;
+  background-color: #f7f3ec;
 }
+
+.filters h3 {
+  font-family: "PTSans-regular", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  padding-right: 18px;
+}
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  background-color: #f7f3ec;
+  font-family: "PTSans-regular", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sort-choice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.filters-choice {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 220px;
+  margin: 0;
+}
+
+.price-slider fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.price-slider  fieldset legend {
+  margin-top: 15px;
+  font-family: "PTSans-regular", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.price-slider {
+  font-family: "PTSans-regular", "Arial", sans-serif;
+  font-size: 17px; 
+  color: #000;
+  line-height: 18px;
+}
+
+.range-filter {               
+  padding-top: 10px;
+  width: auto;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.range-controls{             /*бокс*/
+  position:relative;
+  height: 80px;
+  margin-bottom:15px;
+  /*padding:0 30px;*/
+  background:#f7f3ec;
+  overflow: hidden;
+}
+.scale{                     /*Линия, по кототорой двигать ползунки*/
+  margin-top:39px;
+  height:2px;
+  background:#d7dcde;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.bar{                       /*Зеленая линия*/
+  height:2px;
+  background:#00ca74;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.toggle {                   /*Ползунок вообще*/
+  position:absolute;
+  top:30px;
+  left:20px;
+  width:4px;
+  height:4px;
+  border: 8px solid white;
+  background:#ababab;
+  cursor:pointer;
+  border-radius:50%;
+}
+.min-toggle{                /*Ползунок на минимуме*/
+  left: 20px;
+}
+.max-toggle{                /*Ползунок на максимуме*/
+  left: 140px;
+}
+
+.price-controls .min-price, 
+.price-controls .max-price {   /*Боксы с min&max ценой*/
+  width: 95px;
+  padding: 12px 0px;
+  margin-left: 0px;
+  background:#f7f3ec;
+  font-size: 17px;
+  font-family:"PTSans-regular", "Arial", sans-serif;
+  text-align: center;
+  color: #000;
+  border: none;
+}
+
+.filters-choice ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 19px;
+}
+
+.filter-option {
+  margin-bottom: 19px;
+  padding-left: 34px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: -4px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/checkbox-off-filters.svg") no-repeat 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: -34px;
+  top: -4px;
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-on-filters.svg") no-repeat 0 0; 
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  left: -34px;
+  top: -4px;
+  width: 25px;
+  height: 25px;
+  
+  background: url("../img/radio-off-filters.svg") no-repeat 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: -34px;
+  top: -4px;
+  width: 25px;
+  height: 25px;
+  
+  background: url("../img/radio-on-filters.svg") no-repeat 0 0;
+}
+
+.filters-choice .button {
+  display: inline-block;
+  width: 140px;
+  margin-top: 75px;
+  padding: 13px 30px;
+  font-family: "PTSans-regular", "Arial", sans-serif;
+  font-size: 13px;
+
+  text-align: center;
+  background-color: #ffffff;
+  vertical-align: middle;
+
+  color: #000000;
+  border: solid 1px #e5e5e5;
+}
+
+.catalog-products {
+  width: 700px;
+}
+
+.about-perforator {
+  margin: 0;
+}
+
+.about-perforator h2 {
+  padding-top: 64px;
+  padding-bottom: 25px;
+  padding-left: 130px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about-perforator p {
+  font-family: "PTSans-regular", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  width: 930px;
+  padding-bottom: 69px;
+  padding-left: 130px;
+  margin: 0;
+}
+/*
+
 
 .filters {
   width: 220px;
@@ -999,7 +1242,7 @@ body h2 {
   margin: 0;
 }
 
-
+*/
 /*
 .perforators {
   font-size: 30px;
