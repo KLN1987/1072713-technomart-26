@@ -69,17 +69,21 @@ body h2 {
 
 .header-flex {
   display: flex;
-  justify-content: space-between;
   position: relative;
 }
 
 .logo-technomart {
-  position: absolute;
+  position: relative;
+  width: 220px;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+  /*position: absolute;
   top: 0px;
   left: 0px;
-  width: 200px;
-  padding: 9px 10px;
-  font-size: 18px;
+  width: 220px;*/
+  /*padding-top: 12px;
+
+  font-size: 22px;
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
@@ -87,6 +91,18 @@ body h2 {
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
   overflow: hidden;
+  width: 220px;*/
+}
+
+.logo-technomart img {
+  position: absolute;
+  top: 12px;
+  left: 56px;
+  width: 107px;
+  height: 17px;
+  
+
+  /*padding-left: 57px;*/
 }
 
 .logo-technomart:hover {
@@ -97,21 +113,18 @@ body h2 {
   background-color: #ba2732;
 }
 
-.main-header-right {
+/*.main-header-right {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;;
   margin: 0;
   list-style: none;
   text-align: center;
-  width: 450px;
-}
+}*/
 
 .header-search {
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-right: 8px;
-  padding-left: 269px;
+  padding-left: 49px;
   font-size: 17px;
   color: #fff;
   width: 270px;
@@ -128,17 +141,17 @@ body h2 {
 .header-bookmarks {
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 8px;
-  padding-right: 8px;
-  font-size: 17px;
+  padding-left: 44px;
+  font-size: 17px; 
+  width: 150px;
 }
 
 .header-basket {
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 50px;
   font-size: 17px;
+  width: 150px;
 }
 
 .header-bookmarks:hover,
@@ -155,7 +168,7 @@ body h2 {
 .header-basket-catalog {
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 8px;
+  padding-left: 21px;
   padding-right: 8px;
   font-size: 17px; 
   background-color: #ee3643;
@@ -164,10 +177,10 @@ body h2 {
 .header-order {
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 21px;
   font-size: 17px;
   background-color: #63a63e;
+  width: 150px;
 }
 
 .header-order:hover {
@@ -680,6 +693,10 @@ address {
   padding-top: 6px;
 }
 
+.catalog-products {
+  width: 700px;
+}
+
 .product-choice {
   display: flex;
   justify-content: space-between;
@@ -688,7 +705,6 @@ address {
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   background-color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .index-galery {
@@ -698,6 +714,7 @@ address {
   text-align: center;
   border: solid 1px #eaeaea;
   line-height: 18px;
+  margin-bottom: 20px;
 }
 
 .index-galery .action {
@@ -832,7 +849,6 @@ address {
 .company-info {
   display: flex;
   justify-content: space-between;
-  /*margin-bottom: 86px;*/ 
 }
 
 .about-company {
@@ -840,12 +856,6 @@ address {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 86px;
-}
-
-.about-company span {
-  width: 25px;
-  height: 2px;
-  background-color: #ee3643;
 }
 
 .about-company p,
@@ -881,9 +891,9 @@ address {
 }
 
 .delivery-company span {
-  width: 25px;
-  height: 2px;
+  font-size: 25px;
   color: rgb(238, 54, 67);
+  margin: 0;
 }
 
 .company-adress {
@@ -1037,7 +1047,7 @@ address {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: 20px;
+
  }
 
  .filters {
@@ -1108,6 +1118,7 @@ address {
   margin: auto;
   margin-bottom: 10px;
 }
+
 .range-controls{             /*бокс*/
   position:relative;
   height: 80px;
@@ -1116,6 +1127,7 @@ address {
   background:#f7f3ec;
   overflow: hidden;
 }
+
 .scale{                     /*Линия, по кототорой двигать ползунки*/
   margin-top:39px;
   height:2px;
@@ -1244,10 +1256,6 @@ address {
   border: solid 1px #e5e5e5;
 }
 
-.catalog-products {
-  width: 700px;
-}
-
 .about-perforator {
   margin: 0;
 }
@@ -1264,7 +1272,6 @@ address {
   font-family: "PTSans-regular", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  width: 930px;
   padding-bottom: 69px;
   padding-left: 130px;
   margin: 0;
@@ -1490,6 +1497,8 @@ address {
   margin-left: 130px;
   margin-top: 26px;
 }
+
+
 
 .footer-second-menu ul{
   display: flex;
