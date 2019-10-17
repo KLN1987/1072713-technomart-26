@@ -62,7 +62,7 @@ body h2 {
   margin: 0 auto;  
 }
 
-.header-hat {
+ .header-hat {
   width: 100%;
   background-color: #293449;
 }
@@ -73,25 +73,9 @@ body h2 {
 }
 
 .logo-technomart {
-  position: relative;
   width: 220px;
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
-  /*position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 220px;*/
-  /*padding-top: 12px;
-
-  font-size: 22px;
-  line-height: 24px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-  background-color: #ee3643;
-  box-shadow: 0 5px 0 0 #b52933;
-  overflow: hidden;
-  width: 220px;*/
 }
 
 .logo-technomart img {
@@ -100,9 +84,6 @@ body h2 {
   left: 56px;
   width: 107px;
   height: 17px;
-  
-
-  /*padding-left: 57px;*/
 }
 
 .logo-technomart:hover {
@@ -113,21 +94,13 @@ body h2 {
   background-color: #ba2732;
 }
 
-/*.main-header-right {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-}*/
-
 .header-search {
+  width: 270px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 49px;
   font-size: 17px;
-  color: #fff;
-  width: 270px;
+  color: #fff; 
 }
 
 .header-search:hover {
@@ -149,7 +122,7 @@ body h2 {
 .header-basket {
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 50px;
+  padding-left: 48px;
   font-size: 17px;
   width: 150px;
 }
@@ -192,7 +165,7 @@ body h2 {
   background-color: #518534;
 }
 
-.main-header,
+header,
 .service,
 .about-perforator {
   background-color: #f2f6f8;
@@ -1047,7 +1020,6 @@ address {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
  }
 
  .filters {
@@ -1087,17 +1059,28 @@ address {
   flex-direction: column;
   width: 220px;
   margin: 0;
+  margin-bottom: 25px;
 }
 
-.price-slider fieldset {
+/*.price-slider fieldset {
   border: none;
   padding: 0;
   margin: 0;
-  margin-top: 20px;
+}
+/*.price-slider legend {
+  font-family: "PTSans-regular", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 30px;
+}*/
+
+.catalog-center {
+  display: flex;
+  justify-content: space-between; 
 }
 
-.price-slider  fieldset legend {
-  margin-top: 15px;
+.catalog-center legend {
   font-family: "PTSans-regular", Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -1105,11 +1088,19 @@ address {
   margin-bottom: 30px;
 }
 
-.price-slider {
+.catalog-center fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+
+/*.price-slider {
   font-family: "PTSans-regular", "Arial", sans-serif;
   font-size: 17px; 
   color: #000;
-  line-height: 18px;
+  line-height: 18px;*/
 }
 
 .range-filter {               
@@ -1182,7 +1173,7 @@ address {
 }
 
 .filter-option {
-  margin-bottom: 19px;
+  padding-bottom: 19px;
   padding-left: 34px;
 }
 
@@ -1238,6 +1229,10 @@ address {
   height: 25px;
   
   background: url("../img/radio-on-filters.svg") no-repeat 0 0;
+}
+
+.catalog-center .line-catalog {
+  margin-top: 25px; 
 }
 
 .filters-choice .button {
