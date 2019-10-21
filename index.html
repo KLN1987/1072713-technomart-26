@@ -17,7 +17,7 @@
         <form class="header-search" action="http://echo.htmlacademy.ru" method="post">
           <div class="search">
           <label for="search">Поиск:</label>
-          <input id="search" type="search" placeholder="Перфораторы">
+          <input class="visually-hidden" id="search" type="search" placeholder="Перфораторы">
           </div>         
         </form>
         <div class="header-bookmarks">
@@ -71,7 +71,7 @@
   <main>
     <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
     <section class="container">
-      <div class="category-choice">
+      <div class="main-flex">
         <div class="category-item material">
           <div class="flag new-flag">новинка</div>
           <div class="name-category">Материалы</div>
@@ -97,34 +97,35 @@
         <div class="main-slider">
           <div class="slider-inner">
             <div class="slider-slides">
-              <div class="open-catalog">
+             <!--- <div class="open-catalog">
                 <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
               </div>
               <div class="arrow">
                 <button class="prev" alt="Назад"></button>
                 <button class="next" alt="Вперед"></button>
               </div>
-              <div class="discription-slide slide">
-                <p>ДРЕЛИ</p>
-                <span>Соседям на радость!</span>
-                <img src="img/main-drill.png">
-              </div>
-              <div class="discription-slide slide-2">
-                <p>ПЕРФОРАТОРЫ</p>
-                <span>Настоящие мужские игрушки</span>
-                <img src="img/perforators.png">
-              </div>
+              <div clas="discription-slide">
+              <div class="slide">-->
+               <!-- <p>ДРЕЛИ</p>
+                <span>Соседям на радость!</span>-->
+                <img src="img/main-drill.png" alt="дрели">
+             <!-- </div>-->
+              <!--<div class="slide">-->
+               <!--<p>ПЕРФОРАТОРЫ</p>
+                <span>Настоящие мужские игрушки</span>-->
+                <img src="img/perforators.png" alt="перфораторы">
+             <!-- </div>-->
             </div>
-            <div class="switch">
+            </div>
+            <!--<div class="switch">-->
               <input type="radio" id="btn-1" name="toggle" checked>
               <input type="radio" id="btn-2" name="toggle">
               <div class="slider-controls">
                 <label for="btn-1"></label>
                 <label for="btn-2"></label>
-              </div>
+              <!--</div>-->
             </div>
-          </div>
-        </div>
+          </div> 
         <div class="category-item discount">
           <div class="name-category">Скидка 50%</div>
           <div class="image-discount"><img width="59" height="72" src="img/basket.svg"></div>
@@ -138,6 +139,7 @@
           <div class="btn-category-choice">
             <a class="link-category-choice" href="#">БЕСПЛАТНО</a>
           </div>
+        </div>
         </div>
     </section>
     <section>
@@ -280,9 +282,7 @@
             <a href="#">ЖелДорЭкспедиция</a>
           </li>
         </ul>
-        <div class="detailed-company">
-          <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
-        </div>
+          <a class="detailed-company" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
       </div>
       <div class="company-adress">
         <h2>КОНТАКТЫ</h2>
@@ -291,7 +291,7 @@
           заехав в наш офис:
         </p>
         <div class="map">
-          <img width="300" height="158" src="img/adress.png" alt="Офис компании по адресу ул.Б.Конюшенная д. 19/8">
+          <a href="#"><img width="300" height="158" src="img/adress.png" alt="Офис компании по адресу ул.Б.Конюшенная д. 19/8"></a>
         </div>
         <div class="big-map">
           <img src="img/big-map.png">
@@ -354,19 +354,23 @@
       </div>
     </div>
     <div class="footer-second">
+      <div class="container footer-second-flex">
       <p>
         <span>&copy;</span>
         2010-2019 Компания "Техномарт"<br>Все права защищены
       </p>
       <ul class="social-network">
         <li>
-          <a href="#" aria-label="Техномарт во Вконтакте">Вконтакте</a>
+          <a class="social-button" href="#" aria-label="Техномарт во Вконтакте"><span class="visually-hidden">Вконтакте</span>
+          <img width="26" height="15" src="img/icon-vk.svg"></a>
         </li>
         <li>
-          <a href="#" aria-label="Техномарт в Фейсбуке">Фейсбук</a>
+          <a class="social-button" href="#" aria-label="Техномарт в Фейсбуке"><span class="visually-hidden">Фейсбук</span>
+          <img width="12" height="22" src="img/icon-fb.svg"> </a>
         </li>
         <li>
-          <a href="#" aria-label="Техномарт в Инстаграмме">Инстаграмм</a>
+          <a class="social-button" href="#" aria-label="Техномарт в Инстаграмме"><span class="visually-hidden">Инстаграмм</span>
+          <img width="21" height="21" src="img/icon-insta.svg"></a>
         </li>
       </ul>
       <div class="developer">
@@ -379,6 +383,7 @@
           <a href="#">htmlacademy.ru</a>
         </p>
       </div>
+    </div>
     </div>
   </footer>
 </body>
