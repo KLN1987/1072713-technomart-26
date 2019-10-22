@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   
-  font-family: "Cuprum-regular", "PT Sans", Arial, sans-serif;
+  font-family: 'Cuprum', 'PT Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -173,9 +173,10 @@ input:focus::placeholder { color: black;}
   position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 40px;
+  padding-left: 13px;
   font-size: 17px;
   width: 150px;
+  text-align: center;
 }
 
 .header-bookmarks:before {
@@ -194,8 +195,9 @@ input:focus::placeholder { color: black;}
   width: 150px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 50px;
+  padding-left: 17px;
   font-size: 17px;
+  text-align: center;
 }
 
 .header-basket:before {
@@ -239,10 +241,11 @@ input:focus::placeholder { color: black;}
   width: 150px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 50px;
-  padding-right: 8px;
+  padding-left: 17px;
+  /*padding-right: 8px;*/
   font-size: 17px; 
   background-color: #ee3643;
+  text-align: center;
 }
 
 .header-basket-catalog:before {
@@ -265,7 +268,8 @@ input:focus::placeholder { color: black;}
 }
 
 .header-order {
-  padding: 13px 21px;
+  padding-top: 13px; /*20px;*/
+  padding-bottom: 13px;
   text-align: center;
   font-size: 17px;
   background-color: #63a63e;
@@ -304,20 +308,28 @@ header,
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
+  width: 226px;
 }
 
 .header-contacts {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 73px;
+  margin-left: 37px;
 }
 
 .phone {
   position: relative;
+  width: 220px;
   font-size: 21px;
   line-height: 18px;
   text-align: center;
   border: 3px solid #fff;
-  padding: 12px 22px 12px 74px;
-  margin-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  margin-left: 5px;
 }
 
 .phone a {
@@ -335,12 +347,14 @@ header,
 }
 
 address {
-  margin-left: 42px;
-  margin-top: 5px;
+  margin-top: 4px;
   font-size: 14px;
   line-height: 24px;
-  text-align: center;
+  padding: 0;
   color: #32425c;
+  width: 280px;
+  text-align: center;
+  font-family: 'Cuprum', sans-serif;
 }
 
 .account-catalog {
@@ -351,17 +365,22 @@ address {
 .login-account-catalog {
   position: relative;
   display: inline-block;
+  font-size: 21px;
   background-color: #fff;
   margin-left: 51px;
   padding-top: 12px;
-  padding-right: 46px;
   padding-bottom: 12px;
-  padding-left: 40px;
+  padding-left: 46px;
+  padding-right: 62px;
 }
 
 .user-name {
-  font-size: 21px;
   color: #000;
+  font-family: "Cuprum"
+}
+
+.user-name:active {
+  opacity: 0.3;
 }
 
 .login-account-catalog:before {
@@ -381,7 +400,7 @@ address {
   width: 20px;
   height: 17px;
   top: 15px;
-  left: 266px;
+  left: 269px;
   background: url("../img/icon-logout.svg") no-repeat 0 0;
   opacity: 0.3;
 }
@@ -406,29 +425,11 @@ address {
 
   position: absolute;
   top: 6px;
-  left: 89px;
+  left: 80px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: #32425c;
-}
-
-.personal-account a {
-  color: #32425c;
-}
-
-.personal-account p {
-  font-size: 21px;
-  background-color: #ffffff;
-}
-
-.login-account a {
-  font-size: 21px;
-  color: #000000;
-}
-
-.user-name:active {
-  opacity: 0.3;
 }
 
 .login-account-catalog:hover::before,
@@ -452,33 +453,15 @@ address {
   opacity: 0.3;
 }
 
-.login-registration {
-  position: relative;
-  width: 150px;
-  display: inline-block;
-  font-size: 21px;
-  line-height: 21px;
-  text-decoration: none;
-  text-align: center;
-  color: #000000;
-  background-color: #fff;
-  padding-top: 12px;
-  padding-bottom: 12px; 
-}
-
-.login-registration:hover,
-.login-enter:hover {
-  color: #ee3643;
-}
-
-.login-registration:active,
-.login-enter:active  {
-  color: rgba(0, 0, 0, 0.3);
+.login-account {
+  display: flex;
+  flex-wrap: wrap;
+  width: 281px;
+  margin-left: 64px;
 }
 
 .login-enter {
   position: relative;
-  display: inline-block;
   width: 121px;
   font-size: 21px;
   line-height: 21px;
@@ -486,9 +469,9 @@ address {
   text-align: center;
   color: #000000;
   background-color: #fff;
-  padding-left: 46px;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 14px;
 }
 
 .login-enter::before {
@@ -500,6 +483,30 @@ address {
   height: 17px;
   background: url("../img/icon-login.svg") no-repeat 0 0;
   opacity: 0.3;
+}
+
+.login-registration {
+  position: relative;
+  width: 150px;
+  font-size: 21px;
+  line-height: 21px;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  background-color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px; 
+  margin-right: 0;
+}
+
+.login-registration:hover,
+.login-enter:hover {
+  color: #ee3643;
+}
+
+.login-registration:active,
+.login-enter:active  {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .login-enter:hover::before {
@@ -523,12 +530,15 @@ address {
 }
  
 .header-navigation li:hover {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #000;
 }
 
 .header-navigation li:active {
-  opacity: 0.5;
   background-color: #1d2739;
+}
+
+.header-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .about-company,
@@ -557,7 +567,7 @@ address {
 .main-menu,
 .main-menu a {
   font-size: 13px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -674,6 +684,13 @@ address {
   margin-right: 0;
 }
 
+.main-flex-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
 .discount {
   background-color: #8ed78f;
   margin-right: 0px;
@@ -684,8 +701,13 @@ address {
   margin-right: 0px;
 }
 /*слайдер*/
+
+.slider {
+  width: 620px;
+}
+
 .main-slider {
-  position: relative;
+ position: relative;
 }
 
 .main-slider input[type="radio"] {
@@ -698,15 +720,20 @@ address {
 
 .slider-slides {
   width: 200%;
+  transition: transform 0.8s ease;
 }
 
-.slider-slides img {
+.slider-slides .discription-slide {
   float: left;
   width: 620px;
   height: 266px;
 }
 
-.discription-slide p {
+.discription-slide {
+  position: relative;
+}
+
+.slide p {
   position: absolute;
   font-size: 36px;
   line-height: 36px;
@@ -716,7 +743,7 @@ address {
   margin-left: 25px;
 }
 
-.discription-slide span {
+.slide span {
   position: absolute;
   font-size: 18px;
   line-height: 24px;
@@ -770,7 +797,7 @@ address {
   border: 0;
 }
 
-/*.slider-controls {
+.slider-controls {
   position: absolute; 
   top: 220px;
   left: 295px;
@@ -790,9 +817,18 @@ address {
   margin-right: 10px;
 }
 
-.slider-controls label:active {
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
   background-color: #ee3643;
-}*/
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+  transform: translate(-620px);
+}
 
 .popular-manufacture,
 .popular-product 
@@ -859,8 +895,10 @@ address {
   width: 220px;
   text-align: center;
   border: solid 1px #eaeaea;
-  line-height: 18px;
+  line-height: 20px;
   margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .index-galery .action {
@@ -953,7 +991,7 @@ address {
 
 .index-galery .image {
   width: 218px;
-  height: 164px;
+  height: 168px;
 }
 
 .index-galery .image img {
@@ -964,7 +1002,7 @@ address {
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
-  margin-bottom: 15px; 
+  margin-bottom: 10px; 
 }
 
 .index-galery .price {
@@ -1057,7 +1095,7 @@ address {
 
 .about-company p,
 .company-adress p {
-  font-family: "PTSans-regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1130,7 +1168,7 @@ address {
 }
 
 .service p {
-  font-family: "PT Sans-regular", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-bottom: 70px;
@@ -1240,7 +1278,7 @@ address {
 .breadcrumbs a,
 .page-now {
   color: #000;
-  font-family: "PTSans-regular", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -1267,7 +1305,7 @@ address {
 }
 
 .filter h3 {
-  font-family: "PTSans-regular", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1279,7 +1317,7 @@ address {
   justify-content: space-between;
   width: 700px;
   background-color: #f7f3ec;
-  font-family: "PTSans-regular", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1304,7 +1342,7 @@ address {
 .sorts a {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.3);
-  font-family: "PTSans-regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   border-bottom: 1px solid rgba(238, 54, 67);
 }
 
@@ -1317,6 +1355,19 @@ address {
   opacity: 1;
   color:  #ee3643;
   border-bottom: none;
+}
+
+.active-btn a {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+.active-btn .btn-up-sort {
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #ee3643;
 }
 
 .btn-up,
@@ -1383,7 +1434,7 @@ address {
 }
 
 .catalog-center legend {
-  font-family: "PTSans-regular", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
@@ -1396,7 +1447,6 @@ address {
   margin: 0;
   margin-top: 20px;
 }
-
 
 .range-filter {               
   padding-top: 10px;
@@ -1454,7 +1504,7 @@ address {
   margin-left: 0px;
   background:#f7f3ec;
   font-size: 17px;
-  font-family:"PTSans-regular", "Arial", sans-serif;
+  font-family:"PT Sans", "Arial", sans-serif;
   text-align: center;
   color: #000;
   border: none;
@@ -1540,7 +1590,7 @@ address {
   width: 140px;
   margin-top: 75px;
   padding: 13px 30px;
-  font-family: "PTSans-regular", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
 
   text-align: center;
@@ -1616,7 +1666,7 @@ address {
 }
 
 .about-perforator p {
-  font-family: "PTSans-regular", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-bottom: 69px;
@@ -1713,7 +1763,7 @@ address {
 
 .footer-contacts .footer-adress,
 .footer-contacts .footer-phone {
-  font-family: "Cuprum-regular", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #f3f7f9;
   font-size: 18px;
   /*line-height: 24px;*/
