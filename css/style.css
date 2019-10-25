@@ -1923,10 +1923,6 @@ input[type="email"] {
   /*padding-left: 16px;*/
 }
 
-/*input[type="email"]{
-  margin-right: 0;
-}*/
-
 textarea {
   width: 460px;
   padding-top: 10px;
@@ -1954,12 +1950,21 @@ textarea {
   box-shadow: none; 
 }
 
-/*.modal-name,
-.modal-email {
-  font-family: 'PTSans', sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-}*/
+.modal-map {
+  top: 50%;
+  left: 50%;
+  width: 1200px;
+  height: 779px;
+  margin-left: -600px;
+  margin-bottom: 280px;
+  border: none;
+  display: none;
+}
+
+.modal-map p {
+  margin: 0;
+}
+
 
 
 
