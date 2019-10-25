@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext"
+    rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -71,7 +73,7 @@
   <main>
     <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
     <section class="container">
-        <div class="main-flex">
+      <div class="main-flex">
         <div class="category-item material">
           <div class="flag new-flag">новинка</div>
           <div class="name-category">Материалы</div>
@@ -127,23 +129,23 @@
             </div>
           </div>
         </div>
-          <div class="main-flex-right">
-            <div class="category-item discount">
-              <div class="name-category">Скидка 50%</div>
-              <div class="image-discount"><img width="59" height="72" src="img/basket.svg"></div>
-              <div class="btn-category-choice">
-                <a class="link-category-choice" href="#">НА 350 ТОВАРОВ</a>
-              </div>
+        <div class="main-flex-right">
+          <div class="category-item discount">
+            <div class="name-category">Скидка 50%</div>
+            <div class="image-discount"><img width="59" height="72" src="img/basket.svg"></div>
+            <div class="btn-category-choice">
+              <a class="link-category-choice" href="#">НА 350 ТОВАРОВ</a>
             </div>
-            <div class="category-item delivery">
-              <div class="name-category">Доставка</div>
-              <div class="image-delivery"><img width="78" height="63" src="img/delivery.svg"></div>
-              <div class="btn-category-choice">
-                <a class="link-category-choice" href="#">БЕСПЛАТНО</a>
-              </div>
+          </div>
+          <div class="category-item delivery">
+            <div class="name-category">Доставка</div>
+            <div class="image-delivery"><img width="78" height="63" src="img/delivery.svg"></div>
+            <div class="btn-category-choice">
+              <a class="link-category-choice" href="#">БЕСПЛАТНО</a>
             </div>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
     <section>
       <div class="container">
@@ -179,7 +181,7 @@
               <a href="#" class="buy">Купить</a>
               <a href="#" class="bookmark">В закладки</a>
             </div>
-            <div class="image"><img src="img/Bosh BFG6000.png"></div>
+            <div class="image"><img img width="144" height="128" src="img/Bosh BFG6000.png"></div>
             <div class="title">Перфоратор BOSH BFG 6000</div>
             <div class="price">30500 P.</div>
             <div class="sale-price">25500 P.</div>
@@ -232,32 +234,59 @@
         </div>
       </div>
     </section>
-    <section class="service">
-      <div class="container service-section">
-        <h2>СЕРВИСЫ</h2>
-        <p>
-          Хорший интернет-магазин отличается от плохого не только ценами!<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-        <div class="btn-service">
-          <div class="delivery-bottom">
-            <a href="#">Доставка</a>
+    <section class="service service-flex">
+      <div class="container">
+        <div class="services">
+          <h2>СЕРВИСЫ</h2>
+          <p>
+            Хорший интернет-магазин отличается от плохого не только ценами!<br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+        </div>
+        <div class="service-section">
+          <div class="btn-service">
+            <div class="delivery-bottom">
+              <a href="#">Доставка</a>
+            </div>
+            <div class="guarantee-bottom">
+              <a href="#">Гарантия</a>
+            </div>
+            <div class="credit-bottom">
+              <a href="#">Кредит</a>
+            </div>
           </div>
-          <div class="guarantee-bottom">
-            <a href="#">Гарантия</a>
+          <div class="about-delivery visually-hidden">
+            <h3>ДОСТАВКА</h3>
+            <p>
+              Мы с удовольствием доставим вам товар прямо<br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо зарабатываем,<br>
+              поднимая его на ваш этаж!
+            </p>
+            <img width="480" height="261" src="img/car.svg">
           </div>
-          <div class="credit-bottom">
-            <a href="#">Кредит</a>
+          <div class="about-guarantee visually-hidden">
+            <h3>ГАРАНТИЯ</h3>
+            <p>
+              Если купленный у нас товар поломается или заискрит,<br>
+               а также в случае пожара, спровоцированного его<br>
+              возгоранием, вы всегда можете быть уверены в<br>
+              нашей гарантии. Мы обменяем сгоревший товар на<br>
+              новый.<br> 
+              Дом уж восстановите как-нибудь сами.
+            </p>
+            <img width="480" height="261" src="img/guarantee.png">
+          </div>
+          <div class="about-credit">
+            <h3>КРЕДИТ</h3>
+            <p>
+              Залезть в долговую яму стало проще!<br>
+               Кредитные консультанты придут вам на помощь.
+            </p>
+            <a class="btn-application" href="#">Отправить заявку</a>
+            <img width="480" height="261" src="img/credit-img.png">
           </div>
         </div>
-        <h3>ДОСТАВКА</h3>
-        <p>
-          Мы с удовольствием доставим вам товар прямо<br>
-          к вашему подъезду совершенно бесплатно!<br>
-          Ведь мы неплохо зарабатываем,<br>
-          поднимая его на ваш этаж!<br>
-        </p>
-        <img width="480" height="261" src="img/car.svg">
       </div>
     </section>
     <div class="container company-info">
@@ -393,6 +422,31 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal modal-write-us">
+    <form class="form-write-us">
+      <div class="form-flex">
+      <p>
+      <label for="modal-user-name">Ваше имя:</label>
+      <input type="text" name="name" class="modal-name" id="modal-user-name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+      <label for="modal-user-email">Ваш e-mail:</label>
+      <input type="email" name="email" class="modal-email" id="modal-user-email" placeholder="email@example.com">
+      </p>
+      <p>
+      <label for="modal-user-message">Текст письма:</label>
+      <textarea type="text" name="text" class="modal-message" id="modal-user-message" rows="5"
+        placeholder="В свободной форме"></textarea>
+      </p>
+      </div>
+      <div class="modal-btn-send">
+        <button class="modal-button">ОТПРАВИТЬ</button>
+      </div>
+    </form>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+
 </body>
 
 </html>
