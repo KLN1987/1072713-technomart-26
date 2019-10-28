@@ -96,37 +96,31 @@
             <a class="link-category-choice" href="#">ДЛЯ СТРОЙКИ</a>
           </div>
         </div>
-        <div class="slider">
-          <div class="main-slider">
-            <div class="slider-inner">
-              <div class="slider-slides">
-                <div class="open-catalog">
-                  <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-                </div>
-                <div class="arrow">
-                  <button class="prev" alt="Назад"></button>
-                  <button class="next" alt="Вперед"></button>
-                </div>
-                <div clas="discription-slide">
-                  <div class="slide">
-                    <p>ДРЕЛИ</p>
-                    <span>Соседям на радость!</span>
-                    <img src="img/main-drill.png" alt="дрели">
-                  </div>
-                  <div class="visually-hidden slide">
-                    <p>ПЕРФОРАТОРЫ</p>
-                    <span>Настоящие мужские игрушки</span>
-                    <img src="img/perforators.png" alt="перфораторы">
-                  </div>
-                </div>
+        <div class="slider-slides">
+          <div class="open-catalog">
+            <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+          </div>
+          <div clas="discription-slide">
+            <div class="slide">
+              <div class="slide-text">
+                <p>ДРЕЛИ</p>
+                <span>Соседям на радость!</span>
               </div>
-              <input type="radio" id="btn-1" name="toggle" checked>
-              <input type="radio" id="btn-2" name="toggle">
-              <div class="slider-controls">
-                <label for="btn-1"></label>
-                <label for="btn-2"></label>
-              </div>
+              <img src="img/main-drill.png" alt="дрели">
             </div>
+            <div class="slide">
+              <div class="slide-text">
+                <p>ПЕРФОРАТОРЫ</p>
+                <span>Настоящие мужские игрушки</span>
+              </div>
+              <img src="img/perforators.png" alt="перфораторы">
+            </div>
+            <a class="prev" onclick="minusSlide()" alt="Назад"></a>
+            <a class="next" onclick="plusSlide()" alt="Вперед"></a>
+          </div>
+          <div class="slider-controls">
+            <span class="slider-controls-item" onclick="currentSlide(1)"></span>
+            <span class="slider-controls-item" onclick="currentSlide(2)"></span>
           </div>
         </div>
         <div class="main-flex-right">
@@ -200,15 +194,6 @@
             <div class="sale-price">12500 P.</div>
           </div>
         </div>
-        <div class="place-order">
-          <form action="http://echo.htmlacademy.ru" method="post">
-            <button type="button" aria-label="Закрыть форму покупки товара">х</button>
-            <img src="img/icon-form-mark.svg">
-            <p>Товар добавлен в корзину</p>
-            <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
-            <a href="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
-          </form>
-        </div>
       </div>
     </section>
     <section>
@@ -245,17 +230,11 @@
         </div>
         <div class="service-section">
           <div class="btn-service">
-            <div class="delivery-bottom">
-              <a href="#">Доставка</a>
-            </div>
-            <div class="guarantee-bottom">
-              <a href="#">Гарантия</a>
-            </div>
-            <div class="credit-bottom">
-              <a href="#">Кредит</a>
-            </div>
+            <a class="delivery-bottom" onclick="alert(1)" href="#">Доставка</a>
+            <a class="guarantee-bottom" onclick="alert(2)" href="#">Гарантия</a>
+            <a class="credit-bottom" onclick="alert(3)" href="#">Кредит</a>
           </div>
-          <div class="about-delivery visually-hidden">
+          <div class="service-item about-delivery">
             <h3>ДОСТАВКА</h3>
             <p>
               Мы с удовольствием доставим вам товар прямо<br>
@@ -265,7 +244,7 @@
             </p>
             <img width="480" height="261" src="img/car.svg">
           </div>
-          <div class="about-guarantee visually-hidden">
+          <div class="service-item about-guarantee">
             <h3>ГАРАНТИЯ</h3>
             <p>
               Если купленный у нас товар поломается или заискрит,<br>
@@ -277,7 +256,7 @@
             </p>
             <img width="480" height="261" src="img/guarantee.png">
           </div>
-          <div class="about-credit">
+          <div class="service-item about-credit">
             <h3>КРЕДИТ</h3>
             <p>
               Залезть в долговую яму стало проще!<br>
@@ -322,35 +301,11 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <div class="map">
-          <a href="#"><img width="300" height="158" src="img/adress.png"
+          <a class="map contacts-button-map" href="map.html"><img width="300" height="158" src="img/adress.png"
               alt="Офис компании по адресу ул.Б.Конюшенная д. 19/8"></a>
-        </div>
-        <div class="big-map">
-          <img src="img/big-map.png">
-          <button type="button" aria-label="Закрыть большую карту">х</button>
-        </div>
-        <div class="btn-write-us">
-          <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
-        </div>
-        <div class="write-us">
-          <form action="http://echo.htmlacademy.ru" method="post">
-            <p>
-              <label for="search-name">Ваше имя:</label>
-              <input id="search-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-            </p>
-            <p>
-              <label for="search-email">Ваш e-mail:</label>
-              <input id="search-email" type="text" name="email" value="" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="search-text">Текст письма:</label>
-              <textarea id="search-text" name="comment" cols="#" rows="#" placeholder="В свободной форме"></textarea>
-            </p>
-            <button type="button" aria-label="Закрыть форму для вопроса к компании">Закрыть</button>
-            <button type="submit">Отправить</button>
-          </form>
-        </div>
+              <div class="btn-write-us">        
+          <a class="write-us" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+          </div>
       </div>
     </div>
   </main>
@@ -423,37 +378,56 @@
     </div>
   </footer>
 
-  <section class="visually-hidden modal modal-write-us">
-    <form class="form-write-us">
+  <section class="modal modal-write-us">
+    <form class="form-write-us" action="http://echo.htmlacademy.ru" method="post">
       <div class="form-flex">
-      <p>
-      <label for="modal-user-name">Ваше имя:</label>
-      <input type="text" name="name" class="modal-name" id="modal-user-name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-      <label for="modal-user-email">Ваш e-mail:</label>
-      <input type="email" name="email" class="modal-email" id="modal-user-email" placeholder="email@example.com">
-      </p>
-      <p>
-      <label for="modal-user-message">Текст письма:</label>
-      <textarea type="text" name="text" class="modal-message" id="modal-user-message" rows="5"
-        placeholder="В свободной форме"></textarea>
-      </p>
+        <p>
+          <label for="modal-user-name">Ваше имя:</label>
+          <input type="text" name="name" class="modal-name" id="modal-user-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="modal-user-email">Ваш e-mail:</label>
+          <input type="email" name="email" class="modal-email" id="modal-user-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="modal-user-message">Текст письма:</label>
+          <textarea type="text" name="text" class="modal-message" id="modal-user-message" rows="5"
+            placeholder="В свободной форме"></textarea>
+        </p>
       </div>
       <div class="modal-btn-send">
-        <button class="modal-button">ОТПРАВИТЬ</button>
+        <button class="modal-button" type="submit">ОТПРАВИТЬ</button>
       </div>
     </form>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
+  <!--<section class="modal modal-added-cart">
+      <form class="modal-order">
+        <p class="modal-text-order">Товар добавлен в корзину!</p>
+        <div class="modal-buttons-order">
+            <button class="modal-button-order" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+            <button class="modal-button-resum">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+        </div>
+      </form>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </section>-->
+
   <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p><img src="img/big-map.png" width="1200" height="779" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-      <button class="modal-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </section>
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572292614287!5m2!1sru!2sru"
+      width="1200" height="779" allowfullscreen>
+    </iframe>
+    <p><img src="img/big-map.png" width="1200" height="779"
+        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
+  <script src="js/slider.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/index.js"></script>
+
 
 </body>
 
