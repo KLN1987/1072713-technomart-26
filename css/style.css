@@ -163,7 +163,8 @@ label {
   position: relative;
   outline: none;
   color: black;
-  background: white;
+  padding-left: 49px;
+  background: #fff url("../img/icon-search-red.svg") no-repeat 12px 12px;
 }
 
 input::placeholder { color: transparent;} 
@@ -1919,11 +1920,6 @@ img {
   border-top: 7px solid #ee3643;
 }
 
-.modal-show {
-  display: block;
-  animation: bounce 0.6s;
-}
-
 .modal-error {
   animation: shake 0.6s;
 }
@@ -1944,6 +1940,7 @@ img {
   height: 21px;
   border: 0;
   background: url("../img/icon-close-modal.svg") no-repeat  0 0;
+  z-index: 10;
 }
 
 .form-flex {
@@ -2020,10 +2017,10 @@ textarea {
 .modal-map {
   top: 50%;
   left: 50%;
-  width: 1200px;
+  width: 940px;
   height: 779px;
-  margin-left: -600px;
-  margin-bottom: 280px;
+  margin-left: -470px;
+  margin-bottom: -280px;
   border: none;
   display: none;
 }
@@ -2031,7 +2028,6 @@ textarea {
 .modal-map iframe {
   position: relative;
   z-index: 2;
-
   border: none;
 }
 
@@ -2043,6 +2039,10 @@ textarea {
   margin: 0;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
 
 /*order*/
 
