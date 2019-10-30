@@ -230,43 +230,43 @@
         </div>
         <div class="service-section">
           <div class="btn-service">
-            <a class="delivery-bottom" onclick="alert(1)" href="#">Доставка</a>
-            <a class="guarantee-bottom" onclick="alert(2)" href="#">Гарантия</a>
-            <a class="credit-bottom" onclick="alert(3)" href="#">Кредит</a>
+            <button class="tablinks" onclick="openSection(event, 'delivery')" href="#">Доставка</button>
+            <button class="tablinks" onclick="openSection(event, 'guarantee')" href="#">Гарантия</button>
+            <button class="tablinks" onclick="openSection(event, 'credit')" href="#">Кредит</button>
           </div>
-          <div class="service-item about-delivery">
-            <h3>ДОСТАВКА</h3>
-            <p>
-              Мы с удовольствием доставим вам товар прямо<br>
-              к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо зарабатываем,<br>
-              поднимая его на ваш этаж!
-            </p>
-            <img width="480" height="261" src="img/car.svg">
-          </div>
-          <div class="service-item about-guarantee">
-            <h3>ГАРАНТИЯ</h3>
-            <p>
-              Если купленный у нас товар поломается или заискрит,<br>
-               а также в случае пожара, спровоцированного его<br>
-              возгоранием, вы всегда можете быть уверены в<br>
-              нашей гарантии. Мы обменяем сгоревший товар на<br>
-              новый.<br> 
-              Дом уж восстановите как-нибудь сами.
-            </p>
-            <img width="480" height="261" src="img/guarantee.png">
-          </div>
-          <div class="service-item about-credit">
-            <h3>КРЕДИТ</h3>
-            <p>
-              Залезть в долговую яму стало проще!<br>
-               Кредитные консультанты придут вам на помощь.
-            </p>
-            <a class="btn-application" href="#">Отправить заявку</a>
-            <img width="480" height="261" src="img/credit-img.png">
+          <div id="delivery" class="service_item active">
+              <h3>ДОСТАВКА</h3>
+              <p>
+                Мы с удовольствием доставим вам товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо зарабатываем,<br>
+                поднимая его на ваш этаж!
+              </p>
+              <img width="480" height="261" src="img/car.svg">
+            </div>
+            <div id="guarantee" class="service_item">
+              <h3>ГАРАНТИЯ</h3>
+              <p>
+                Если купленный у нас товар поломается или заискрит,<br>
+                 а также в случае пожара, спровоцированного его<br>
+                возгоранием, вы всегда можете быть уверены в<br>
+                нашей гарантии. Мы обменяем сгоревший товар на<br>
+                новый.<br> 
+                Дом уж восстановите как-нибудь сами.
+              </p>
+              <img width="480" height="261" src="img/guarantee.png">
+            </div>
+            <div id="credit" class="service_item">
+              <h3>КРЕДИТ</h3>
+              <p>
+                Залезть в долговую яму стало проще!<br>
+                 Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="btn-application" href="#">Отправить заявку</a>
+              <img width="480" height="261" src="img/credit-img.png">
+            </div>
           </div>
         </div>
-      </div>
     </section>
     <div class="container company-info">
       <div class="about-company">
@@ -301,11 +301,11 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-          <a class="map contacts-button-map" href="map.html"><img width="300" height="158" src="img/adress.png"
-              alt="Офис компании по адресу ул.Б.Конюшенная д. 19/8"></a>
-              <div class="btn-write-us">        
+        <a class="map contacts-button-map" href="map.html"><img width="300" height="158" src="img/adress.png"
+            alt="Офис компании по адресу ул.Б.Конюшенная д. 19/8"></a>
+        <div class="btn-write-us">
           <a class="write-us" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
-          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -379,15 +379,15 @@
   </footer>
 
   <section class="modal modal-added-cart">
-      <form class="modal-order">
-        <p class="modal-text-order">Товар добавлен в корзину!</p>
-        <div class="modal-buttons-order">
-            <button class="modal-button-order" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
-            <button class="modal-button-resum">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-        </div>
-      </form>
-      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-    </section>
+    <form class="modal-order">
+      <p class="modal-text-order">Товар добавлен в корзину!</p>
+      <div class="modal-buttons-order">
+        <button class="modal-button-order" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+        <button class="modal-button-resum">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+      </div>
+    </form>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
 
 
   <section class="modal modal-write-us">
@@ -427,6 +427,7 @@
 
   <script src="js/basket.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/service-item.js"></script>
   <script src="js/map.js"></script>
   <script src="js/index.js"></script>
 
