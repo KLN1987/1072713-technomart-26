@@ -1174,10 +1174,9 @@ img {
 }
 
 .service p {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PTSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
-  padding: 0;
 }
 
 .btn-service {
@@ -1207,10 +1206,6 @@ img {
   color: #fff; 
   border: none;
 }
-.active {
-  display: block;
-  background-color: inherit;
-}
 
 .btn-service button{
   box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
@@ -1234,6 +1229,11 @@ img {
   line-height: 36px;
   margin: 0;
   margin-bottom: 24px;
+}
+
+.service-section p {
+  width: 313px;
+  margin: 0;
 }
 
 .service-section img {
@@ -1260,6 +1260,10 @@ img {
   to {opacity: 1;}
 }
 
+.active {
+  display: block;
+  background-color: inherit;
+}
 
 .btn-application {
   display: inline-block;
