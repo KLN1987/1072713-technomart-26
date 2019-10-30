@@ -582,7 +582,6 @@ address {
   font-size: 24px;
   padding-left: 22px;
   padding-top: 20px;
-  /*padding-bottom: 22px;*/
 }
 
 .catalog-item {
@@ -599,7 +598,7 @@ address {
   
   text-indent: -1000px;
   overflow: hidden;
-  z-index: 20;
+  /*z-index: 20;*/
 }
 
 .new-flag {
@@ -621,12 +620,11 @@ address {
   margin-top: 13px;
   margin-bottom: 22px;
   text-align: center;
-  /*padding: 12px 0;*/
 }
 
 .btn-category-choice .link-category-choice {
   font-size: 14px;
-  /*line-height: 18px;*/
+  line-height: 18px;
   color: #fff;
 }
 
@@ -730,7 +728,7 @@ address {
   height: 40px;
   top: 114px;
   left: 25px;
-  z-index: 20; 
+  /*z-index: 20;*/ 
   background: url("../img/arrow.svg") no-repeat 0 0;
   border: 0;
 }
@@ -742,7 +740,7 @@ address {
   height: 40px;
   top: 114px;
   left: 578px;
-  z-index: 20;
+  /*z-index: 20;*/
   background: url("../img/arrow.svg") no-repeat 0 0;
   transform: rotate(180deg);
   border: 0;
@@ -772,7 +770,7 @@ address {
   top: 220px;
   left: 295px;
   text-align: center;
-  z-index: 20;
+  /*z-index: 20;*/
 }
 
 .slider-controls-item {
@@ -803,7 +801,7 @@ address {
   line-height: 18px;
   margin-top: 206px;
   margin-left: 25px;
-  z-index: 20; 
+  /*z-index: 20;*/ 
 }
 
 .open-catalog:hover{
@@ -895,7 +893,7 @@ address {
   padding: 40px 0;
   
   background-color: rgba(255,255,255,0.9);
-  z-index: 10;
+  /*z-index: 10;*/
 }
 
 .index-galery .action .buy,
@@ -1183,7 +1181,6 @@ img {
   display: flex;
   flex-direction: column;
   width: 240px;
-  /*float: left;*/
   margin-right: 80px;
   position: relative;
 }
@@ -1232,8 +1229,7 @@ img {
 }
 
 .service-section p {
-  width: 313px;
-  margin: 0;
+  width: 340px;
 }
 
 .service-section img {
@@ -1476,7 +1472,7 @@ img {
 }
 
 .catalog-center legend {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PTSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
@@ -1532,9 +1528,11 @@ img {
   cursor:pointer;
   border-radius:50%;
 }
+
 .min-toggle{                /*Ползунок на минимуме*/
   left: 20px;
 }
+
 .max-toggle{                /*Ползунок на максимуме*/
   left: 140px;
 }
@@ -1706,7 +1704,7 @@ img {
 }
 
 .about-perforator p {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PTSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-bottom: 69px;
@@ -1826,8 +1824,10 @@ img {
   padding-bottom: 34px;
 }
 
-.footer-second p {
-   color: #ffffff;
+.footer-second-flex p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
 }
 
 .social-network {
@@ -1949,7 +1949,7 @@ img {
   height: 21px;
   border: 0;
   background: url("../img/icon-close-modal.svg") no-repeat  0 0;
-  z-index: 10;
+  /*z-index: 10;*/
 }
 
 .form-flex {
@@ -2024,12 +2024,11 @@ textarea {
 
 /*carta*/
 .modal-map {
-  top: 50%;
-  left: 50%;
+  top: 12%;
+  left: 12%;
   width: 940px;
   height: 779px;
-  margin-left: -470px;
-  margin-bottom: -280px;
+  transform: translate (-50%, -50%);
   border: none;
   display: none;
 }
@@ -2044,13 +2043,16 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
   margin: 0;
 }
 
 .modal-show {
   display: block;
   animation: bounce 0.6s;
+}
+
+.map-show {
+  display: block;
 }
 
 /*order*/

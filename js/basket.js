@@ -1,12 +1,14 @@
-var basket = document.querySelector(".basket");
+var basket = document.querySelectorAll(".basket");
 var basket_popup = document.querySelector(".modal-added-cart");
 var basket_close = basket_popup.querySelector(".modal-close");
 var basket_form = basket_popup.querySelector("form");
 
-basket.addEventListener("click", function (evt) {
+for (var i=0; i<basket.length; i++) { 
+  basket[i].addEventListener('click', function(evt) {
   evt.preventDefault();
   basket_popup.classList.add("modal-show");
 });
+}
 
 basket_close.addEventListener("click", function (evt) {
   evt.preventDefault();
