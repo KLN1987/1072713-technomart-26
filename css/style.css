@@ -1,15 +1,13 @@
-/*html { 
+html { 
   box-sizing: border-box; 
 }
-*, *::before, *::after { 
-  box-sizing: inherit; 
-}*/
 
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
   
-  font-family: 'Cuprum', 'PT Sans', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -74,7 +72,6 @@ header {
 .header-flex {
   display: flex;
   justify-content: space-between;
-  /*align-items: center;*/
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -132,7 +129,7 @@ background-color: #293449;
   width: 17px;
   height: 17px;
   top: 12px;
-  left: 12px;
+  left: 16px;
   background: url("../img/icon-search.svg") no-repeat 0 0;
   opacity: 0.3;
 }
@@ -151,7 +148,7 @@ background-color: #293449;
 
 .search {
   display: flex;
- /* width: 270px;*/
+  width: 260px;
   height: 100%;
 }
 
@@ -162,7 +159,7 @@ background-color: #293449;
   background: transparent;
   font-size: 17px;
   color: white;
-  margin-left: -49px;
+  margin-left: -91px;
 }
 
 .search label {
@@ -171,7 +168,6 @@ background-color: #293449;
 }
 
 .search input:focus {
-  /*position: relative;*/
   outline: none;
   color: black;
   padding-left: 49px;
@@ -181,6 +177,22 @@ background-color: #293449;
 input::placeholder { color: transparent;} 
 
 input:focus::placeholder { color: black;} 
+
+input[type="search"]::-moz-placeholder{
+  font-family: 'Cuprum', Arial, sans-serif;
+}
+
+input[type="search"]::-webkit-input-placeholder{
+  font-family: 'Cuprum', Arial, sans-serif;
+}
+
+input[type="search"]::-ms-input-placeholder {
+  font-family: 'Cuprum', Arial, sans-serif;
+}
+
+input[type="search"]::placeholder {
+  font-family: 'Cuprum', Arial, sans-serif;
+}
 
 
 .header-menu {
@@ -583,18 +595,18 @@ header,
 .main-menu,
 .main-menu a {
   font-size: 13px;
-  font-family: "PTSans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
 }
 
 .category-item {
   position: relative;
   display: inline-block;
-  width: 275px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding-left: 22px;
+  padding-left: 24px;
   padding-top: 20px;
+  padding-right: 140px;
 }
 
 .category-item .name-category {
@@ -618,6 +630,7 @@ header,
   
   text-indent: -1000px;
   overflow: hidden;
+  z-index: 10;
 }
 
 .new-flag {
@@ -839,7 +852,7 @@ header,
 }
 
 .popular-product {
-  margin-top: 36px;
+  margin-top: 32px;
   margin-bottom: 20px;
 }
  
@@ -904,7 +917,7 @@ header,
   height: 88px;
   padding: 40px 0;
   
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
 }
 
 .index-galery .action .buy,
@@ -924,7 +937,7 @@ header,
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: 'Cuprum', sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -996,9 +1009,9 @@ header,
 .index-galery .title {
   min-height: 40px;
   padding: 0 25px;
-  margin-top: 10px;
-  margin-bottom: 10px; 
-  font-family: 'PT Sans', sans-serif;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -1007,9 +1020,9 @@ header,
 
 .index-galery .price {
   min-height: 20px;
-  margin-top: 12px;
-  margin-bottom: 10px;
-  font-family: 'PT Sans', sans-serif;
+  margin-top: 11px;
+  margin-bottom: 8px;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -1019,17 +1032,20 @@ header,
 
 .index-galery .sale-price {
   position: relative;
-  width: 80px;
-  margin-left: 43px;
-  margin-bottom: 20px;
-  padding: 8px 28px;
-  font-family: 'PT Sans', sans-serif;
+  width: 103px;
+  margin-left: 42px;
+  margin-bottom: 18px;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: white;
   background: #ee3643;
   border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 17px;
+  padding-right: 15px;
 }
 
 .index-galery .sale-price::after {
@@ -1042,7 +1058,7 @@ header,
   width: 0;
   height: 0;
   
-  border: 17px solid white;
+  border: 20px solid white;
   border-left-color: #ee3643;
 }
 
@@ -1102,7 +1118,7 @@ header,
 
 .about-company p,
 .company-adress p {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1209,7 +1225,7 @@ img {
 
 .service p {
   width: 400px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1361,7 +1377,7 @@ img {
 .breadcrumbs a,
 .page-now {
   color: #000;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -1388,7 +1404,7 @@ img {
 }
 
 .filter h3 {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1548,11 +1564,9 @@ img {
 }
 
 .range-controls{             /*бокс*/
-  position:relative;
+  position: relative;
   height: 80px;
-  margin-bottom:15px;
-  /*padding:0 30px;*/
-  background:#f7f3ec;
+  background: #f7f3ec;
   overflow: hidden;
 }
 
@@ -1594,10 +1608,10 @@ img {
 .price-controls .min-price, 
 .price-controls .max-price {   /*Боксы с min&max ценой*/
   width: 95px;
-  padding: 12px 0px;
-  background:#f7f3ec;
+  padding: 5px 1px;
+  background: #f7f3ec;
   font-size: 17px;
-  font-family:"PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
   color: #000;
   border: none;
@@ -1621,7 +1635,7 @@ legend .filter-option:last-child {
 .filter-option {
   margin-bottom: 21px;
   padding-left: 34px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 19px;
   margin-top: 12px;
@@ -1683,7 +1697,11 @@ legend .filter-option:last-child {
 }
 
 .catalog-center .line-catalog {
-  margin-top: 10px; 
+  margin-top: 11px; 
+}
+
+.catalog-center .second-line {
+  margin-top: -10px;
 }
 
 .catalog-products {
@@ -1693,9 +1711,9 @@ legend .filter-option:last-child {
 .filters-choice .button {
   display: inline-block;
   width: 140px;
-  margin-top: 75px;
+  margin-top: 56px;
   padding: 13px 30px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
 
   text-align: center;
@@ -1706,34 +1724,52 @@ legend .filter-option:last-child {
   border: solid 1px #e5e5e5;
 }
 
+.product-choice-catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  margin-top: 13px;
+}
+
 .navigation-pages {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
   margin: 0;
-
   list-style: none;
-  margin-left: 240px;
-  margin-top: 50px;
+  margin-left: 200px;
+  margin-top: 29px;
   margin-bottom: 60px;
 }
 
 .page-number {
-  margin-right: 10px;
+  margin-right: 14px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  padding-left: -2px;
+  width: 36px;
 }
 
 .page-number:last-child {
-  margin-right: 0;
+  margin-left: -5px;
+  padding-left: 0px;
+  width: 139px;
 }
 
 .page-number a {
-  display: block;
-  padding: 10px 12px;
-  color: #000; 
-  border-radius: 2px;
-  border: solid 1px rgb(229, 229, 229);
-  background-color: #fff;
+    display: block;
+    color: #000;
+    border-radius: 2px;
+    border: solid 1px rgb(229, 229, 229);
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    text-align: center;  
 }
+
 
 .page-number a:hover {
   border-radius: 2px;
@@ -1770,7 +1806,7 @@ legend .filter-option:last-child {
 
 .about-perforator-p {
   width: 930px;
-  font-family: "PTSans", "Arial", sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-bottom: 69px;
@@ -1865,12 +1901,13 @@ legend .filter-option:last-child {
   flex-direction: column;
   justify-content: space-between;
   height: 40px;
-  margin-top: 13px;
+  margin-top: 12px;
+  margin-left: 3px;
 }
 
 .footer-contacts .footer-adress,
 .footer-contacts .footer-phone {
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #f3f7f9;
   font-size: 18px;
   line-height: 24px;
@@ -1885,7 +1922,7 @@ legend .filter-option:last-child {
 .footer-second-flex {
   display: flex;
   justify-content: space-between;
-  padding-top: 36px;
+  padding-top: 21px;
   padding-bottom: 34px;
 }
 
@@ -1907,7 +1944,7 @@ legend .filter-option:last-child {
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  margin-left: 159px;
+  margin-left: 149px;
 }
 
 .social-button {
@@ -2015,9 +2052,9 @@ legend .filter-option:last-child {
 /*заблудились?*/
 .modal-write-us {
   width: 620px;
-  bottom: 201px;
+  top: 50%;
   left: 50%;
-  margin-left: -290px;
+  transform: translate(-50%, -50%);
 }
 
 .modal-close {
@@ -2047,11 +2084,9 @@ label {
 
 input,
 textarea {
-  font-family: 'PTSans',  sans-serif;
+  font-family: 'PTSans', Arial, sans-serif;
   font-size: 13px;
   border: solid 2px rgb(222, 227, 228);
-  font-family: 'PTSans',  sans-serif;
-  font-size: 13px;
   color: #999999;
 }
 
@@ -2138,9 +2173,9 @@ textarea {
 
 .modal-added-cart {
   width: 620px;
-  top: 411px;
+  top: 50%;
   left: 50%;
-  margin-left: -290px;
+  transform: translate(-50%, -50%);
 }
 
 .modal-order {
@@ -2153,7 +2188,7 @@ textarea {
 .modal-text-order {
   width: 421px;
   text-align: center;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 30px;
   margin-top: 72px;
   margin-left: 127px;
