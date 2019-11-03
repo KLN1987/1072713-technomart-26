@@ -1458,12 +1458,13 @@ img {
   border-bottom: none;
 }
 
-.btn-sort{
+.btn-sort {
   display: flex;
   justify-content: space-between;
   width: 43px;
   margin-right: auto;
-  margin-top: 4px;
+  margin-top: 17px;
+  margin-left: 7px;
 }
 
 .active-btn-price a {
@@ -1489,20 +1490,6 @@ img {
 .btn-down {
   margin-right: 17px;
   margin-left: 21px;
-}
-.btn-up {
-  margin-left: 28px;
-}
-
-.btn-up-sort {
-  width: 0px;
-  height: 0px;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 11px solid #c5c5c5;
-}
-
-.btn-down-sort {
   width: 0px;
   height: 0px;
   border-left: 5px solid transparent;
@@ -1510,15 +1497,24 @@ img {
   border-top: 11px solid #c5c5c5;
 }
 
-.btn-up-sort:hover {
+.btn-up {
+  margin-left: 28px;
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 11px solid #c5c5c5;
+}
+
+.btn-up:hover {
   width: 0px;
   height: 0px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 11px solid #000;
 }
-
-.btn-up-sort:active {
+.active-up,
+.btn-up:active {
   width: 0px;
   height: 0px;
   border-left: 5px solid transparent;
@@ -1526,7 +1522,7 @@ img {
   border-bottom: 11px solid #ee3643;
 } 
 
-.btn-down-sort:hover {
+.btn-down:hover {
   width: 0px;
   height: 0px;
   border-left: 5px solid transparent;
@@ -1534,7 +1530,7 @@ img {
   border-top: 11px solid #000000;
 }
 
-.btn-down-sort:active {
+.btn-down:active {
   width: 0px;
   height: 0px;
   border-left: 5px solid transparent;
@@ -1543,11 +1539,11 @@ img {
 }
 
 .catalog-center legend {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .catalog-center fieldset {
@@ -1608,13 +1604,13 @@ img {
 .price-controls .min-price, 
 .price-controls .max-price {   /*Боксы с min&max ценой*/
   width: 95px;
-  padding: 5px 1px;
   background: #f7f3ec;
   font-size: 17px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
   color: #000;
   border: none;
+  margin-top: 6px;
 }
 
 .price-controls .max-price {
@@ -1702,10 +1698,6 @@ legend .filter-option:last-child {
 
 .catalog-center .second-line {
   margin-top: -10px;
-}
-
-.catalog-products {
-  margin-top: 20px;
 }
 
 .filters-choice .button {
