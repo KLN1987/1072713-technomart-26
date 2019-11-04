@@ -18,12 +18,12 @@
           <img width="110" height="19" src="img/logo-technomart.svg" alt="Логотип интернет-магазина Техномарт">
         </a>
         <nav class="header-flex">
-          <div class="header-search">
+          <form action="https://echo.htmlacademy.ru" class="header-search">
             <div class="search">
               <label for="search">Поиск:</label>
               <input id="search" type="search" placeholder="Перфораторы">
             </div>
-          </div>
+          </form>
           <ul class="header-menu">
             <li><a class="header-bookmarks" href="#">Закладки: 0</a></li>
             <li><a class="header-basket" href="#">Корзина: 0</a></li>
@@ -95,9 +95,7 @@
           </div>
         </div>
         <div class="slider-slides">
-          <div class="open-catalog">
-            <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-          </div>
+            <a class="open-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
           <div class="discription-slide">
             <div class="slide">
               <div class="slide-text">
@@ -204,15 +202,15 @@
       <div class="container">
         <div class="logo-manufacture">
           <div class="card-logo-manufacture">
-            <div class="image-logo-manufacture"><img width="126" height="37" src="img/bosch.png" alt="BOSH"></div>
-            <div class="image-logo-manufacture"><img width="123" height="40" src="img/Makita.png" alt="MAKITA"></div>
-            <div class="image-logo-manufacture"><img width="146" height="44" src="img/DeWALT.png" alt="DeWALT"></div>
-            <div class="image-logo-manufacture"><img width="200" height="88" src="img/Интерскол.png" alt="ИНТЕРСКОЛ">
-            </div>
-            <div class="image-logo-manufacture"><img width="169" height="31" src="img/Hitachi.png" alt="HITACHI"></div>
-            <div class="image-logo-manufacture"><img width="121" height="73" src="img/LG.png" alt="LG"></div>
-            <div class="image-logo-manufacture"><img width="151" height="96" src="img/AEG.png" alt="AEG"></div>
-            <div class="image-logo-manufacture"><img width="204" height="69" src="img/Metabo.png" alt="METABO"></div>
+            <a class="image-logo-manufacture"><img width="126" height="37" src="img/bosch.png" alt="BOSH"></a>
+            <a class="image-logo-manufacture"><img width="123" height="40" src="img/Makita.png" alt="MAKITA"></a>
+            <a class="image-logo-manufacture"><img width="146" height="44" src="img/DeWALT.png" alt="DeWALT"></a>
+            <a class="image-logo-manufacture"><img width="200" height="88" src="img/Интерскол.png" alt="ИНТЕРСКОЛ">
+            </a>
+            <a class="image-logo-manufacture"><img width="169" height="31" src="img/Hitachi.png" alt="HITACHI"></a>
+            <a class="image-logo-manufacture"><img width="121" height="73" src="img/LG.png" alt="LG"></a>
+            <a class="image-logo-manufacture"><img width="151" height="96" src="img/AEG.png" alt="AEG"></a>
+            <a class="image-logo-manufacture"><img width="204" height="69" src="img/Metabo.png" alt="METABO"></a>
           </div>
         </div>
       </div>
@@ -230,7 +228,7 @@
           <div class="btn-service">
             <button class="tablinks active" onclick="openSection(event, 'delivery')">Доставка</button>
             <button class="tablinks" onclick="openSection(event, 'guarantee')">Гарантия</button>
-            <button class="tablinks" onclick="openSection(event, 'credit')">Кредит</button>
+            <button class="tablinks" onclick="openSection(event, 'credit')">Кредит&nbsp;&nbsp;&nbsp;</button>
           </div>
           <div id="delivery" class="service_item active">
             <h3>ДОСТАВКА</h3>
@@ -255,7 +253,7 @@
             <img width="480" height="261" src="img/guarantee.png" alt="Гарантия">
           </div>
           <div id="credit" class="service_item">
-            <h3>КРЕДИТ</h3>
+            <h3>КРЕДИТ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
             <p>
               Залезть в долговую яму стало проще!<br>
                Кредитные консультанты придут вам на помощь.
@@ -367,7 +365,7 @@
           </p>
           <p class="developed">
             Разработано -
-            <a href="#">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>
@@ -375,7 +373,7 @@
   </footer>
 
   <section class="modal modal-added-cart">
-    <form class="modal-order">
+    <form action="https://echo.htmlacademy.ru" class="modal-order">
       <p class="modal-text-order">Товар добавлен в корзину!</p>
       <div class="modal-buttons-order">
         <button class="modal-button-order" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
@@ -387,7 +385,7 @@
 
 
   <section class="modal modal-write-us">
-    <form class="form-write-us" action="http://echo.htmlacademy.ru" method="post">
+    <form action="https://echo.htmlacademy.ru" class="form-write-us" action="http://echo.htmlacademy.ru" method="post">
       <div class="form-flex">
         <p>
           <label for="modal-user-name">Ваше имя:</label>
@@ -414,7 +412,7 @@
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572292614287!5m2!1sru!2sru"
-      width="940" height="779" allowfullscreen>
+      width="940" height="447" allowfullscreen>
     </iframe>
     <p><img src="img/big-map.png" width="1200" height="779"
         alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
@@ -423,7 +421,7 @@
 
   <script src="js/basket.js"></script>
   <script src="js/slider.js"></script>
-  <script src="js/service-item.js"></script>
+  <script src="js/services.js"></script>
   <script src="js/map.js"></script>
   <script src="js/index.js"></script>
 

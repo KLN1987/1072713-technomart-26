@@ -4,8 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext"
+    rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -18,12 +21,12 @@
           <img width="110" height="19" src="img/logo-technomart.svg" alt="Логотип интернет-магазина Техномарт">
         </a>
         <nav class="header-flex">
-          <div class="header-search">
+          <form action="https://echo.htmlacademy.ru" class="header-search">
             <div class="search">
               <label for="search">Поиск:</label>
               <input id="search" type="search" placeholder="Перфораторы">
             </div>
-          </div>
+          </form>
           <ul class="header-menu">
             <li><a class="header-bookmarks" href="#">Закладки: 0</a></li>
             <li><a class="header-basket active-btn" href="#">Корзина: 10</a></li>
@@ -51,7 +54,9 @@
         </div>
         <div class="account-catalog">
           <div class="login-account-catalog">
+            <a class="img-user"><img width="20" height="18" src="img/icon-user.svg"></a>
             <a class="user-name">Равшан Джамшутович</a>
+            <a class="exit-user"><img width="20" height="17" src="img/icon-logout.svg"> </a>
           </div>
           <div class="login-account-catalog-down">
             <a class="my-order">Мои заказы</a>
@@ -97,17 +102,15 @@
             <li><a class="sorts-function" href="">ПО ФУНКЦИОНАЛУ</a></li>
           </ul>
           <div class="btn-sort">
-            <a class="btn-up active-up" name="Вверх">
-              <!--<a class="btn-up-sort"></a>-->
+            <a class="btn-up active-up" href="#" aria-label="Вверх">
             </a>
-            <a class="btn-down" name="Вниз">
-             <!--<a class="btn-down-sort"></a>-->
+            <a class="btn-down" href="" aria-label="Вниз">
             </a>
           </div>
         </div>
       </div>
       <section class="catalog-center">
-        <form class="filters-choice">
+        <form action="https://echo.htmlacademy.ru" class="filters-choice">
           <div class="price-slider">
             <fieldset>
               <legend>ЦЕНА:</legend>
@@ -125,55 +128,56 @@
                   <input class="max-price" type="text" value="30000">
                 </div>
               </div>
-            </fieldset>
-            <div class="line-catalog"><img width="220" height="1" src="img/line-catalog.svg" alt="линия каталога"> </div>
-            <fieldset>
-              <legend>ПРОИЗВОДИТЕЛИ:</legend>
-              <ul>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosh"
-                    id="filter-bosh" checked>
-                  <label for="filter-bosh">BOSCH</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol"
-                    id="filter-interskol">
-                  <label for="filter-interskol">ИНТЕРСКОЛ</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita"
-                    id="filter-makita" checked>
-                  <label for="filter-makita">MAKITA</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt"
-                    id="filter-dewalt">
-                  <label for="filter-dewalt">DEWALT</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi"
-                    id="filter-hitachi">
-                  <label for="filter-hitachi">HITACHI</label>
-                </li>
-              </ul>
-            </fieldset>
-            <div class="line-catalog second-line"><img width="220" height="1" src="img/line-catalog.svg" alt="линия каталога"></div>
-            <fieldset>
-              <legend>ПИТАНИЕ:</legend>
-              <ul>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="elecro-power-supply"
-                    value="accumulators" id="filter-accumulators">
-                  <label for="filter-accumulators">АККУМУЛЯТОРНЫЕ</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="elecro-power-supply"
-                    value="electrical" id="filter-electrical">
-                  <label for="filter-electrical">СЕТЕВЫЕ</label>
-                </li>
-              </ul>
-            </fieldset>
           </div>
+          </fieldset>
+          <div class="line-catalog"><img width="220" height="1" src="img/line-catalog.svg" alt="линия каталога"> </div>
+          <fieldset>
+            <legend>ПРОИЗВОДИТЕЛИ:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosh"
+                  id="filter-bosh" checked>
+                <label for="filter-bosh">BOSCH</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol"
+                  id="filter-interskol">
+                <label for="filter-interskol">ИНТЕРСКОЛ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita"
+                  id="filter-makita" checked>
+                <label for="filter-makita">MAKITA</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt"
+                  id="filter-dewalt">
+                <label for="filter-dewalt">DEWALT</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi"
+                  id="filter-hitachi">
+                <label for="filter-hitachi">HITACHI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="line-catalog second-line"><img width="220" height="1" src="img/line-catalog.svg"
+              alt="линия каталога"></div>
+          <fieldset>
+            <legend>ПИТАНИЕ:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="elecro-power-supply"
+                  value="accumulators" id="filter-accumulators">
+                <label for="filter-accumulators">АККУМУЛЯТОРНЫЕ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="elecro-power-supply"
+                  value="electrical" id="filter-electrical">
+                <label for="filter-electrical">СЕТЕВЫЕ</label>
+              </li>
+            </ul>
+          </fieldset>
           <button type="submit" class="button">ПОКАЗАТЬ</button>
         </form>
         <div class="catalog-products">
@@ -278,15 +282,15 @@
               <div class="sale-price">12500 P.</div>
             </div>
           </div>
-          </div>
+        </div>
       </section>
-        <ul class="navigation-pages">
-          <li class="page-number page-number-current"><a href="#">1</a></li>
-          <li class="page-number"><a href="#">2</a></li>
-          <li class="page-number"><a href="#">3</a></li>
-          <li class="page-number"><a href="#">СЛЕДУЮЩАЯ</a></li>
-        </ul>
-      </div>
+      <ul class="navigation-pages">
+        <li class="page-number page-number-current"><a href="#">1</a></li>
+        <li class="page-number"><a href="#">2</a></li>
+        <li class="page-number"><a href="#">3</a></li>
+        <li class="page-number"><a href="#">СЛЕДУЮЩАЯ</a></li>
+      </ul>
+    </div>
     <section class="about-perforator">
       <div class="container">
         <!--Общая информация о продукте-->
@@ -296,7 +300,7 @@
           бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы.
           Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-          В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
           ударная дрель.
         </p>
       </div>
@@ -307,7 +311,8 @@
     <div class="footer-first">
       <div class="container">
         <div class="footer-first-up">
-          <div class="logo-technomart-footer"><img width="138" height="24" src="img/logo-technomart.svg" alt="Логотип Техномарт"></div>
+          <div class="logo-technomart-footer"><img width="138" height="24" src="img/logo-technomart.svg"
+              alt="Логотип Техномарт"></div>
           <ul class="footer-first-menu">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -361,7 +366,7 @@
         <div class="developer">
           <p class="feedback">
             Обратная связь:
-            <a href="#">mail@htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">mail@htmlacademy.ru</a>
           </p>
           <p class="developed">
             Разработано -
@@ -373,7 +378,7 @@
   </footer>
 
   <section class="modal modal-added-cart">
-    <form class="modal-order">
+    <form action="https://echo.htmlacademy.ru" class="modal-order">
       <p class="modal-text-order">Товар добавлен в корзину!</p>
       <div class="modal-buttons-order">
         <button class="modal-button-order">ОФОРМИТЬ ЗАКАЗ</button>
