@@ -1063,11 +1063,14 @@ header,
 }
 
 .action .buy:hover {
+  border-radius: 2px;
+  box-shadow: inset 0 -3px 0 0 rgb(54, 115, 21);
   background-color: rgb(95, 187, 45);
 }
 
 .action .buy:active {
-  background-color: #518534;
+  border-radius: 2px;
+  background-color: rgb(81, 133, 52);
 }
 
 .action .bookmark:hover {
@@ -2288,6 +2291,7 @@ legend .filter-option:last-child {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 .modal-close {
@@ -2386,6 +2390,7 @@ textarea {
           transform: translate(-50%, -50%);
   border: none;
   display: none;
+  z-index: 10;
 }
 
 .modal-map iframe {
@@ -2425,6 +2430,7 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 10;        
 }
 
 .modal-order {
