@@ -682,21 +682,23 @@ header,
   font-size: 24px;
 }
 
-.flag {
+.material {
+  position: relative;
+}
+
+.material::before,
+.new-product::before {
+  content: "";
   position: absolute;
   top: -1px;
   right: -1px;
   
   width: 60px;
   height: 60px;
-  
+  background: url('../img/new-flag.png') no-repeat 0 0;
   text-indent: -1000px;
   overflow: hidden;
   z-index: 10;
-}
-
-.new-flag {
-  background: url('../img/new-flag.png') no-repeat 0 0;
 }
 
 .material .image-material {
