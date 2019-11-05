@@ -15,7 +15,6 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -38,7 +37,7 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-body ul {
+ul {
   list-style: none;
 }
 
@@ -47,7 +46,7 @@ a {
   color: #fff;
 }
 
-body h2 {
+h2 {
   font-size: 30px;
   color: #000000;
   font-weight: 400;
@@ -131,6 +130,65 @@ background-color: #293449;
   list-style: none;
 }
 
+.search {
+  width: 270px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.search input, .search button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.search input{
+  height: 40px;
+  padding-left: 49px;
+  border: none;
+  width: 221px;
+}
+
+.search button {
+  cursor: pointer;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 12px;
+  left: 16px; 
+  background: url("../img/icon-search.svg") no-repeat 0 0;
+  opacity: 0.3;
+}
+
+.search input::placeholder {
+  color: #fff;
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 1;
+}
+
+.search:hover {
+  background-color: #212a3a;
+}
+
+.search:hover button{
+  opacity: 1;
+}
+
+.search input:focus {
+  outline: none;
+  color: black;
+  background: #fff url("../img/icon-search-red.svg") no-repeat 12px 12px;
+}
+
+
+/*.search button::before {
+  content: "";
+  opacity: 0.3;
+  background: url("../img/icon-search.svg") no-repeat 0 0;
+}*/
+
+/*
 .header-search{
   height: 42px;
   position: relative;
@@ -207,7 +265,8 @@ input:focus:-ms-input-placeholder { color: black;}
 
 input:focus::-ms-input-placeholder { color: black;} 
 
-input:focus::placeholder { color: black;} 
+input:focus::placeholder { 
+  color: black;} 
 
 input[type="search"]::-moz-placeholder{
   font-family: 'Cuprum', Arial, sans-serif;
@@ -226,9 +285,10 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 input[type="search"]::placeholder {
+  outline: none;
   font-family: 'Cuprum', Arial, sans-serif;
 }
-
+*/
 
 .header-menu {
   display: -webkit-box;
@@ -663,7 +723,7 @@ header,
 .main-menu,
 .main-menu a {
   font-size: 13px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   color: #000000;
 }
 
@@ -983,7 +1043,7 @@ header,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-weight: bold;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   color: #000000;
   background-color: #ffffff;
 }
@@ -1027,7 +1087,7 @@ header,
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum',Arial, sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1215,7 +1275,7 @@ header,
   line-height: 30px;
   margin: 0;
   margin-bottom: 26px;
-  margin-top: 60px;
+  margin-top: 78px;
 }
 
 .about-company {
@@ -1224,7 +1284,7 @@ header,
 
 .about-company p,
 .company-adress p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1346,7 +1406,7 @@ img {
 
 .service p {
   width: 400px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1381,6 +1441,7 @@ img {
   line-height: 30px;
   color: #fff;
   border: none;
+  font-weight: 700;
 }
 
 .btn-service button{
@@ -1413,7 +1474,7 @@ img {
 
 .service-section p {
  width: 273px;
- font-family: 'PT Sans', sans-serif;
+ font-family: 'PT Sans', Arial, sans-serif;
  font-size: 13px;
  line-height: 24px;
 }
@@ -1548,7 +1609,7 @@ img {
 }
 
 .filter h3 {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1564,7 +1625,7 @@ img {
           justify-content: space-between;
   width: 700px;
   background-color: #f7f3ec;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
@@ -1592,7 +1653,7 @@ img {
 .sort-choice a {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.3);
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   border-bottom: 1px solid rgba(238, 54, 67);
 }
 
@@ -1696,7 +1757,7 @@ img {
 }
 
 .catalog-center legend {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
@@ -1763,7 +1824,7 @@ img {
   width: 83px;
   background: #f7f3ec;
   font-size: 17px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   color: #000;
   border: none;
@@ -2357,28 +2418,28 @@ label {
   margin-bottom: 12px;
 }
 
-input,
-textarea {
+.modal-write-us input,
+.modal-write-us textarea {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   border: solid 2px rgb(222, 227, 228);
   color: #999999;
 }
 
-input:hover,
-textarea:hover {
+.modal-write-us input:hover,
+.modal-write-us textarea:hover {
   border: solid 2px rgb(181, 181, 181);
   outline: none;
 }
 
-input:active,
-textarea:active {
+.modal-write-us input:active,
+.modal-write-us textarea:active {
   border: solid 2px rgb(238, 54, 67);
   outline: none;
 }
 
-input[type="text"],
-input[type="email"] {
+.modal-write-us input[type="text"],
+.modal-write-us input[type="email"] {
   width: 210px;
   height: 38px;
   padding-left: 10px;
