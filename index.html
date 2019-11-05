@@ -4,23 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext"
+    rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <meta name="format-direction" content="telephone=no">
 </head>
 
 <body>
   <header>
-      <div class="header-main">
-          <div class="container-header">
+    <div class="header-main">
+      <div class="container-header">
         <a class="logo-technomart">
           <img width="110" height="19" src="img/logo-technomart.svg" alt="Логотип интернет-магазина Техномарт">
         </a>
         <nav class="header-flex">
           <form action="https://echo.htmlacademy.ru" class="search">
-              <input type="text" placeholder="Поиск:">
-              <button type="submit"></button>
+            <input type="text" placeholder="Поиск:">
+            <button type="submit"></button>
           </form>
           <ul class="header-menu">
             <li><a class="header-bookmarks" href="#">Закладки: 0</a></li>
@@ -93,7 +95,7 @@
           </div>
         </div>
         <div class="slider-slides">
-            <a class="open-catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+          <a class="open-catalog red-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
           <div class="discription-slide">
             <div class="slide">
               <div class="slide-text">
@@ -139,7 +141,7 @@
       <div class="container">
         <div class="popular-product">
           <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-          <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+          <a href="#" class="red-btn">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
         </div>
       </div>
       <div class="container">
@@ -194,7 +196,7 @@
       <div class="container">
         <div class="popular-manufacture">
           <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-          <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+          <a href="#" class="red-btn">ВСЕ ПРОИЗВОДИТЕЛИ</a>
         </div>
       </div>
       <div class="container">
@@ -256,7 +258,7 @@
               Залезть в долговую яму стало проще!<br>
                Кредитные консультанты придут вам на помощь.
             </p>
-            <a class="btn-application" href="#">Отправить заявку</a>
+            <a class="btn-application red-btn" href="#">Отправить заявку</a>
             <img width="480" height="261" src="img/credit-img.png" alt="Кредит">
           </div>
         </div>
@@ -284,7 +286,7 @@
             <a href="#">ЖелДорЭкспедиция</a>
           </li>
         </ul>
-        <a class="detailed-company" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+        <a class="detailed-company red-btn" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
       </div>
       <div class="company-adress">
         <h2>КОНТАКТЫ</h2>
@@ -292,11 +294,9 @@
           Вы можете забрать товар сами,
           заехав в наш офис:
         </p>
-        <a class="map contacts-button-map" href="map.html"><img width="300" height="158" src="img/adress.png"
+        <a class="map contacts-button-map" href="map.html"><img class="map-image" width="300" height="158" src="img/adress.png"
             alt="Офис компании по адресу ул.Б.Конюшенная д. 19/8"></a>
-        <div class="btn-write-us">
-          <a class="write-us" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
-        </div>
+        <a class="write-us red-btn" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
       </div>
     </div>
   </main>
@@ -305,7 +305,8 @@
     <div class="footer-first">
       <div class="container">
         <div class="footer-first-up">
-          <div class="logo-technomart-footer"><img width="138" height="24" src="img/logo-technomart.svg" alt="Логотип Техномарт"></div>
+          <div class="logo-technomart-footer"><img width="138" height="24" src="img/logo-technomart.svg"
+              alt="Логотип Техномарт"></div>
           <ul class="footer-first-menu">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -317,7 +318,7 @@
         <div class="footer-first-down">
           <div class="footer-contacts">
             <div class="footer-adress">
-                г.&nbsp;Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д.&nbsp;19/8
+              г.&nbsp;Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д.&nbsp;19/8
             </div>
             <div class="footer-phone">
               +7&nbsp;(812)&nbsp;555-05-55
@@ -343,7 +344,7 @@
           <li>
             <a class="social-button" href="#" aria-label="Техномарт во Вконтакте"><span
                 class="visually-hidden">Вконтакте</span>
-                <img width="26" height="15" src="img/icon-vk.svg" alt="Вконтакте"></a>
+              <img width="26" height="15" src="img/icon-vk.svg" alt="Вконтакте"></a>
           </li>
           <li>
             <a class="social-button" href="#" aria-label="Техномарт в Фейсбуке"><span
@@ -353,7 +354,7 @@
           <li>
             <a class="social-button" href="#" aria-label="Техномарт в Инстаграмме"><span
                 class="visually-hidden">Инстаграмм</span>
-                <img width="21" height="21" src="img/icon-insta.svg" alt="Инстаграмм"></a>
+              <img width="21" height="21" src="img/icon-insta.svg" alt="Инстаграмм"></a>
           </li>
         </ul>
         <div class="developer">
@@ -374,7 +375,7 @@
     <form action="https://echo.htmlacademy.ru" class="modal-order">
       <p class="modal-text-order">Товар добавлен в корзину!</p>
       <div class="modal-buttons-order">
-        <button class="modal-button-order" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+        <button class="modal-button-order red-btn" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
         <button class="modal-button-resum">ПРОДОЛЖИТЬ ПОКУПКИ</button>
       </div>
     </form>
@@ -400,7 +401,7 @@
         </p>
       </div>
       <div class="modal-btn-send">
-        <button class="modal-button" type="submit">ОТПРАВИТЬ</button>
+        <button class="modal-button red-btn" type="submit">ОТПРАВИТЬ</button>
       </div>
     </form>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -417,11 +418,7 @@
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
-  <script src="js/basket.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/technomart.js"></script>
 
 
 </body>
